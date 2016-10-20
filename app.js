@@ -64,7 +64,7 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-var minutes = 10, the_interval = minutes * 60 * 1000;
+var minutes = 2, the_interval = minutes * 60 * 1000;
 var firstImage = true;
 var imageCounter = 0;
 if(firstImage){

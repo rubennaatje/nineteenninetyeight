@@ -31,8 +31,9 @@ block content
     $(function () {
       showText(".titlexD", str, 0, 70);
     });
-    var socket = io.connect('https://protected-anchorage-64880.herokuapp.com');
+    var socket = io.connect('https://cryptic-coast-13816.herokuapp.com/');
     socket.on('newGlitch', function (data) {
+      console.log(data);
       document.getElementById("test").src = "/images/"+data.picture+"?" + new Date().getTime();
     });
 
