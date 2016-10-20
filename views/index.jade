@@ -31,7 +31,7 @@ block content
     $(function () {
       showText(".titlexD", str, 0, 70);
     });
-    var socket = io.connect('http://localhost');
+    var socket = io.connect('https://protected-anchorage-64880.herokuapp.com');
     socket.on('newGlitch', function (data) {
       document.getElementById("test").src = "/images/"+data.picture+"?" + new Date().getTime();
     });
