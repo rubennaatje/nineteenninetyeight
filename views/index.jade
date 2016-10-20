@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  div.overlay
+  div.scanlines
+  br
+  br
+  h3.titlexD
+    //  span.copy  WELCOME TO THIS SITE, OVER HERE THERE WILL BE AN IMAGE DISPLAY WHICH WILL HAVE 15 BYTES REMOVED EVERY 20 MINUTES 4
+    //|WELCOME TO THIS SITE, OVER HERE THERE WILL BE AN IMAGE DISPLAY WHICH WILL HAVE 15 BYTES REMOVED EVERY 10 MINUTES
+
+
+  //p Welcome to this site, over here there is an image being displayed which will have 15 bytes removed every 20 minutes.
+
+  br
+  img(src='/images/' + output, id='test')
+  p.small SMALL PROJECT BY @RUBENNAATJE
+
+  script(src='javascripts/jquery-3.1.1.min.js')
+  script(src='javascripts/socket.js')
+  script.
+    var str = "WELCOME TO THIS SITE, OVER HERE THERE WILL BE AN IMAGE DISPLAY WHICH WILL HAVE 15 BYTES REMOVED EVERY 10 MINUTES";
+    var showText = function (target, message, index, interval) {
+      if (index < message.length) {
+        $(target).append(message[index++]);
+        setTimeout(function () {
+          showText(target, message, index, interval);
+        }, interval);
+      }
+    }
+    $(function () {
+      showText(".titlexD", str, 0, 70);
+    });
+    var socket = io.connect('http://localhost');
+    socket.on('newGlitch', function (data) {
+      document.getElementById("test").src = "/images/"+data.picture+"?" + new Date().getTime();
+    });
+
