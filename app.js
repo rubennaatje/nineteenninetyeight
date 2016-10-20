@@ -20,7 +20,7 @@ io.configure(function() {
   //io.set('match original protocol', true);
   io.set('match origin protocol', true);
 
-};
+});
 process.setMaxListeners(1);
 
 // view engine setup
