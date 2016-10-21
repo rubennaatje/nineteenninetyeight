@@ -64,7 +64,7 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-var minutes = 2, the_interval = minutes * 60 * 1000;
+var minutes = 0.1, the_interval = minutes * 60 * 1000;
 var firstImage = true;
 var imageCounter = 0;
 if(firstImage){
@@ -99,7 +99,7 @@ setInterval(function() {
 
 var test = function (picture) {
   console.log('sending');
-  io.emit('newGlitch', { picture: picture });
+  io.emit('newGlitch', { picture: picture, processvar: process.env.test});
 };
 
 module.exports = app;
