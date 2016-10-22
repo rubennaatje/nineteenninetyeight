@@ -5,6 +5,7 @@ var pg = require('pg');
 // note: all config is optional and the environment variables 
 // will be read if the config is not present 
 var config = {
+    URL: process.env.DATABASE_URL,
     host:process.env.host,
     user: process.env.user, //env var: PGUSER
     database: process.env.database, //env var: PGDATABASE
@@ -18,7 +19,7 @@ var config = {
 //this initializes a connection pool
 //it will keep idle connections open for a 30 seconds
 //and set a limit of maximum 10 idle clients
-var pool = new pg.Pool(process.env.DATABASE_URL);
+var pool = new pg.Pool(config);
 pool.connect(function (err, client, done) {
     if (err) {
         console.log('error fetching client from pool', err);
