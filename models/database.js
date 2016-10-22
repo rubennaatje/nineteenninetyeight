@@ -19,11 +19,8 @@
 //it will keep idle connections open for a 30 seconds
 //and set a limit of maximum 10 idle clients
 var pool = new pg.Pool(config);*/
-var pg = require('pg');
-
-pg.defaults.ssl = true;
-console.log(process.env.DATABASE_URL);
-pg.connect(process.env.DATABASE_URL, function(err, client) {
+var pg = require('pg').native
+pg.connect(process.env.databaseURL, function (err, conn, done) {
     if (err) throw err;
 
     else {
