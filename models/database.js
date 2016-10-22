@@ -18,7 +18,7 @@ var config = {
 //this initializes a connection pool
 //it will keep idle connections open for a 30 seconds
 //and set a limit of maximum 10 idle clients
-var pool = new pg.Pool(config);
+var pool = new pg.Pool(process.env.DATABASE_URL);
 pool.connect(function (err, client, done) {
     if (err) {
         console.log('error fetching client from pool', err);
