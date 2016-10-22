@@ -35,7 +35,6 @@ client.connect(function (err, client, done) {
         client.query('CREATE TABLE IF NOT EXISTS Glitch(id SERIAL PRIMARY KEY,idImage INT, text VARCHAR(40) not null)',
             function (err, result) {
             //call `done()` to release the client back to the pool
-            done();
 
             if (err) {
                 return console.error('error running query', err);
@@ -43,7 +42,7 @@ client.connect(function (err, client, done) {
                 client.query('CREATE TABLE IF NOT EXISTS Image(id SERIAL PRIMARY KEY,fileName VARCHAR(140), text VARCHAR(40) not null,times int,completed boolean)',
                     function (err, result) {
                         //call `done()` to release the client back to the pool
-                        done();
+=
 
                         if (err) {
                             return console.error('error running query', err);
