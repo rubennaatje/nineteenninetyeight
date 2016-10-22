@@ -1,4 +1,4 @@
-var pg = require('pg');
+/*var pg = require('pg');
 
 // create a config to configure both pooling behavior 
 // and client options 
@@ -19,8 +19,10 @@ var config = {
 //this initializes a connection pool
 //it will keep idle connections open for a 30 seconds
 //and set a limit of maximum 10 idle clients
-var pool = new pg.Pool(config);
-pool.connect(function (err, client, done) {
+var pool = new pg.Pool(config);*/
+
+var pg = require('pg').native;
+pg.connect(process.env.databaseURL,function (err, client, done) {
     if (err) {
         console.log('error fetching client from pool', err);
 
