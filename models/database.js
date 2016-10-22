@@ -20,9 +20,13 @@ var config = {
 //it will keep idle connections open for a 30 seconds
 //and set a limit of maximum 10 idle clients
 var pool = new pg.Pool(config);*/
+var pg = require('pg');
 
-var pg = require('pg').native;
-pg.connect(process.env.databaseURL,function (err, client, done) {
+// instantiate a new client
+// the client will read connection information from
+// the same environment variables used by postgres cli tools
+var client = new pg.Client(process.env.DATABASE_URL);
+client.connect(function (err, client, done) {
     if (err) {
         console.log('error fetching client from pool', err);
 
@@ -54,7 +58,7 @@ pg.connect(process.env.databaseURL,function (err, client, done) {
 // to run a query we can acquire a client from the pool,
 // run a query on the client, and then return the client to the pool
 var connection = function (callback) {
-    pool.connect(function (err, client, done) {
+    client.connect(function (err, client, done) {
         if (err) {
              console.log('error fetching client from pool', err);
             return callback(err, null);
@@ -74,7 +78,7 @@ var connection = function (callback) {
         });*/
     });
 };
-pool.on('error', function (err, client) {
+client.on('error', function (err, client) {
     // if an error is encountered by a client while it sits idle in the pool
     // the pool itself will emit an error event with both the error and
     // the client which emitted the original error
