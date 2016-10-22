@@ -1,4 +1,4 @@
-var pg = require('pg');
+//var pg = require('pg');
 
 // create a config to configure both pooling behavior 
 // and client options 
@@ -19,12 +19,12 @@ var pg = require('pg');
 //it will keep idle connections open for a 30 seconds
 //and set a limit of maximum 10 idle clients
 var pool = new pg.Pool(config);*/
-pg.defaults.ssl = true;
-pg.connect(process.env.DATABASE_URL ,function (err, client, done) {
-    if (err) {
-        console.log('error fetching client from pool', err);
+var pg = require('pg');
 
-    }
+pg.defaults.ssl = true;
+pg.connect(process.env.DATABASE_URL, function(err, client) {
+    if (err) throw err;
+
     else {
         client.query('CREATE TABLE IF NOT EXISTS Glitch(id SERIAL PRIMARY KEY,idImage INT, text VARCHAR(40) not null)',
             function (err, result) {
