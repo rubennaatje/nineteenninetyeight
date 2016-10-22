@@ -64,10 +64,15 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-var minutes = 20, the_interval = minutes * 60 * 1000;
+
+var counter =600;
+setInterval(function() {
+  counter--;
+}, 1000);
+var minutes = 10, the_interval = minutes * 60 * 1000;
 
 setInterval(function() {
-  console.log("I am doing my 5 minutes check");
+  console.log("I am doing my 10 minutes check");
   destroy.destroyByte(true,10,0.01,0.9,'xd.jpg', function (err, callback) {
     if (err) {
       console.log(err);
@@ -75,10 +80,10 @@ setInterval(function() {
       test(callback);
     }
   });
-
+  counter = 600;
 }, the_interval);
 
-var minutes2 = 300, the_interval2 = minutes2 * 60 * 1000;
+var minutes2 = 120, the_interval2 = minutes2 * 60 * 1000;
 //every 4 hours
 setInterval(function() {
   console.log("I am doing my 51 minutes check");
@@ -93,7 +98,10 @@ setInterval(function() {
 
 var test = function (picture) {
   console.log('sending');
-  io.emit('newGlitch', { picture: picture, processvar: process.env.test});
+  io.emit('newGlitch', { picture: picture, processvar: process.env.test,counter:counter});
 };
-
+io.on('connection', function(socket){
+  console.log('a user connected');
+  io.emit('newGlitch', { picture: 'xd.jpg', processvar: process.env.test,counter:counter});
+});
 module.exports = app;

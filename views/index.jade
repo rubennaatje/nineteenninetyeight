@@ -11,7 +11,8 @@ block content
 
 
   //p Welcome to this site, over here there is an image being displayed which will have 15 bytes removed every 20 minutes.
-
+  P.ultrasmall
+    | 0
   br
   img(src='/images/' + output, id='test')
 
@@ -19,10 +20,17 @@ block content
   script(src='javascripts/jquery-3.1.1.min.js')
   script(src='javascripts/socket.js')
   script.
-    var socket = io.connect('https://cryptic-coast-13816.herokuapp.com/');
-    // var socket = io.connect('http://localhost');
+    var counter = 0;
+    // var socket = io.connect('https://cryptic-coast-13816.herokuapp.com/');
+    var socket = io.connect('http://localhost');
     socket.on('newGlitch', function (data) {
       console.log(data);
       document.getElementById("test").src = "/images/"+data.picture+"?" + new Date().getTime();
+      counter = data.counter;
     });
+
+    setInterval(function () {
+        counter--;
+        $('.ultrasmall').html(counter);
+    }, 1000);
 
