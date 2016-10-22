@@ -80,7 +80,7 @@ setInterval(function() {
       test(callback);
     }
   });
-  counter = 600;
+  counter = 200;
 }, the_interval);
 
 var minutes2 = 120, the_interval2 = minutes2 * 60 * 1000;
