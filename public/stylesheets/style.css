@@ -128,3 +128,6 @@ body, html {
      overflow-x: hidden;
      overflow-y: auto;
  }
+p.ultrasmall {
+    font-size: 40%;
+}

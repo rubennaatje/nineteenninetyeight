@@ -17,6 +17,7 @@ block content
 
   script(src='../javascripts/jquery-3.1.1.min.js')
   script.
+
      var $overlay = $('<div id="overlay"></div>');
      var $image = $("<img>");
      //An image to overlay
@@ -34,4 +35,7 @@ block content
      });
      $("#overlay").click(function () {
          $("#overlay").hide();
+     });
+     $("img").error(function () {
+         $(this).hide();
      });
