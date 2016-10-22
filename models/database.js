@@ -57,15 +57,15 @@ client.connect(function (err, client, done) {
 // to run a query we can acquire a client from the pool,
 // run a query on the client, and then return the client to the pool
 var connection = function (callback) {
-    client.connect(function (err, client, done) {
-        if (err) {
+    /*client.connect(function (err, client, done) {
+         if (err) {
              console.log('error fetching client from pool', err);
             return callback(err, null);
         }
-        else{
-            return callback(null, client);
-        }
-        /*client.query('CREATE TABLE itemw(id SERIAL PRIMARY KEY, text VARCHAR(40) not null, complete BOOLEAN)', function (err, result) {
+        else{*/
+    return callback(null, client);
+       /*}
+        client.query('CREATE TABLE itemw(id SERIAL PRIMARY KEY, text VARCHAR(40) not null, complete BOOLEAN)', function (err, result) {
             //call `done()` to release the client back to the pool
             done();
 
@@ -74,8 +74,8 @@ var connection = function (callback) {
             }
             console.log('success');
             //output: 1
-        });*/
-    });
+        });
+    });*/
 };
 client.on('error', function (err, client) {
     // if an error is encountered by a client while it sits idle in the pool
