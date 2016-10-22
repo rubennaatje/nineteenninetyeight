@@ -64,37 +64,31 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-var minutes = 0.1, the_interval = minutes * 60 * 1000;
-var firstImage = true;
-var imageCounter = 0;
-if(firstImage){
-  setInterval(function() {
-    console.log("I am doing my 5 minutes check");
-    destroy.destroyByte(true,10,0.01,0.9,'xd.jpg', function (err, callback) {
-      if (err) {
-        console.log(err);
-      } else {
-        test(callback);
-      }
-    });
-
-  }, the_interval);
-}
-var minutes2 = 30, the_interval2 = minutes2 * 60 * 1000;
+var minutes = 20, the_interval = minutes * 60 * 1000;
 
 setInterval(function() {
+  console.log("I am doing my 5 minutes check");
+  destroy.destroyByte(true,10,0.01,0.9,'xd.jpg', function (err, callback) {
+    if (err) {
+      console.log(err);
+    } else {
+      test(callback);
+    }
+  });
+
+}, the_interval);
+
+var minutes2 = 300, the_interval2 = minutes2 * 60 * 1000;
+//every 4 hours
+setInterval(function() {
   console.log("I am doing my 51 minutes check");
-  destroy.saveImage('lol.jpg', function (err, callback) {
+  destroy.saveImage( function (err, callback) {
     if (err) {
       console.log(err);
     } else {
 
     }
   });
-  imageCounter++;
-  if(imageCounter >= 6){
-    firstImage = false;
-  }
 }, the_interval2);
 
 var test = function (picture) {
