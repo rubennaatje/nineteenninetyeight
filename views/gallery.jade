@@ -12,7 +12,7 @@ block content
         each item in rows
          li
             a(href="/images/done/#{item.text}")
-                img( src="/images/done/#{item.text}")
+                img( onerror='this.style.display = "none"', src="/images/done/#{item.text}")
     br
 
   script(src='../javascripts/jquery-3.1.1.min.js')
