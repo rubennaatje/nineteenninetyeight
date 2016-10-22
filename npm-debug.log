@@ -1,0 +1,1868 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'pg-native',
+1 verbose cli   '--save' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData pg-native
+8 silly fetchNamedPackageData pg-native
+9 silly mapToRegistry name pg-native
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/pg-native
+13 verbose request uri https://registry.npmjs.org/pg-native
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 3:36:45 PM
+16 verbose request id 8bfa7aea0aaf6f4f
+17 http request GET https://registry.npmjs.org/pg-native
+18 http 200 https://registry.npmjs.org/pg-native
+19 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+19 verbose headers   etag: '"985C40AMVZNTRMLEQ8KI4DQJ6"',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'content-encoding': 'gzip',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'content-length': '7848',
+19 verbose headers   'accept-ranges': 'bytes',
+19 verbose headers   date: 'Sat, 22 Oct 2016 13:36:52 GMT',
+19 verbose headers   via: '1.1 varnish',
+19 verbose headers   age: '0',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-served-by': 'cache-ams4443-AMS',
+19 verbose headers   'x-cache': 'MISS',
+19 verbose headers   'x-cache-hits': '0',
+19 verbose headers   'x-timer': 'S1477143411.831843,VS0,VE402',
+19 verbose headers   vary: 'Accept-Encoding' }
+20 silly get cb [ 200,
+20 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 silly get     etag: '"985C40AMVZNTRMLEQ8KI4DQJ6"',
+20 silly get     'content-type': 'application/json',
+20 silly get     'content-encoding': 'gzip',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'content-length': '7848',
+20 silly get     'accept-ranges': 'bytes',
+20 silly get     date: 'Sat, 22 Oct 2016 13:36:52 GMT',
+20 silly get     via: '1.1 varnish',
+20 silly get     age: '0',
+20 silly get     connection: 'keep-alive',
+20 silly get     'x-served-by': 'cache-ams4443-AMS',
+20 silly get     'x-cache': 'MISS',
+20 silly get     'x-cache-hits': '0',
+20 silly get     'x-timer': 'S1477143411.831843,VS0,VE402',
+20 silly get     vary: 'Accept-Encoding' } ]
+21 verbose get saving pg-native to C:\Users\ruben\AppData\Roaming\npm-cache\registry.npmjs.org\pg-native\.cache.json
+22 silly install normalizeTree
+23 silly loadCurrentTree Finishing
+24 silly loadIdealTree Starting
+25 silly install loadIdealTree
+26 silly cloneCurrentTree Starting
+27 silly install cloneCurrentTreeToIdealTree
+28 silly cloneCurrentTree Finishing
+29 silly loadShrinkwrap Starting
+30 silly install loadShrinkwrap
+31 silly loadShrinkwrap Finishing
+32 silly loadAllDepsIntoIdealTree Starting
+33 silly install loadAllDepsIntoIdealTree
+34 silly resolveWithNewModule pg-native@1.10.0 checking installable status
+35 silly cache add args [ 'pg-native', null ]
+36 verbose cache add spec pg-native
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'pg-native',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'pg-native',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: '*',
+37 silly cache add   type: 'range' }
+38 silly addNamed pg-native@*
+39 verbose addNamed "*" is a valid semver range for pg-native
+40 silly addNameRange { name: 'pg-native', range: '*', hasData: false }
+41 silly mapToRegistry name pg-native
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/pg-native
+45 verbose addNameRange registry:https://registry.npmjs.org/pg-native not in flight; fetching
+46 verbose get https://registry.npmjs.org/pg-native not expired, no request
+47 silly addNameRange number 2 { name: 'pg-native', range: '*', hasData: true }
+48 silly addNameRange versions [ 'pg-native',
+48 silly addNameRange   [ '0.0.1',
+48 silly addNameRange     '0.0.2',
+48 silly addNameRange     '0.1.0',
+48 silly addNameRange     '0.2.0',
+48 silly addNameRange     '0.3.0',
+48 silly addNameRange     '0.4.0',
+48 silly addNameRange     '0.4.1',
+48 silly addNameRange     '0.5.0',
+48 silly addNameRange     '0.5.1',
+48 silly addNameRange     '0.5.2',
+48 silly addNameRange     '1.0.0',
+48 silly addNameRange     '1.0.1',
+48 silly addNameRange     '1.0.2',
+48 silly addNameRange     '1.0.3',
+48 silly addNameRange     '1.1.0',
+48 silly addNameRange     '1.2.0',
+48 silly addNameRange     '1.3.0',
+48 silly addNameRange     '1.4.0',
+48 silly addNameRange     '1.4.1',
+48 silly addNameRange     '1.4.2',
+48 silly addNameRange     '1.4.3',
+48 silly addNameRange     '1.5.0',
+48 silly addNameRange     '1.7.2',
+48 silly addNameRange     '1.7.3',
+48 silly addNameRange     '1.8.0',
+48 silly addNameRange     '1.8.1',
+48 silly addNameRange     '1.9.0',
+48 silly addNameRange     '1.10.0' ] ]
+49 silly addNamed pg-native@1.10.0
+50 verbose addNamed "1.10.0" is a plain semver version for pg-native
+51 silly mapToRegistry name pg-native
+52 silly mapToRegistry using default registry
+53 silly mapToRegistry registry https://registry.npmjs.org/
+54 silly mapToRegistry uri https://registry.npmjs.org/pg-native
+55 verbose addRemoteTarball https://registry.npmjs.org/pg-native/-/pg-native-1.10.0.tgz not in flight; adding
+56 verbose addRemoteTarball [ 'https://registry.npmjs.org/pg-native/-/pg-native-1.10.0.tgz',
+56 verbose addRemoteTarball   'abe299214afa2be51db5f5104e14770c738230fd' ]
+57 info retry fetch attempt 1 at 3:36:46 PM
+58 info attempt registry request try #1 at 3:36:46 PM
+59 http fetch GET https://registry.npmjs.org/pg-native/-/pg-native-1.10.0.tgz
+60 http fetch 200 https://registry.npmjs.org/pg-native/-/pg-native-1.10.0.tgz
+61 silly fetchAndShaCheck shasum abe299214afa2be51db5f5104e14770c738230fd
+62 verbose addTmpTarball C:\Users\ruben\AppData\Local\Temp\npm-15700-2192fd25\registry.npmjs.org\pg-native\-\pg-native-1.10.0.tgz not in flight; adding
+63 verbose addTmpTarball already have metadata; skipping unpack for pg-native@1.10.0
+64 silly cache afterAdd pg-native@1.10.0
+65 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\pg-native\1.10.0\package\package.json not in flight; writing
+66 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\pg-native\1.10.0\package\package.json written
+67 silly fetchNamedPackageData libpq
+68 silly mapToRegistry name libpq
+69 silly mapToRegistry using default registry
+70 silly mapToRegistry registry https://registry.npmjs.org/
+71 silly mapToRegistry uri https://registry.npmjs.org/libpq
+72 silly fetchNamedPackageData pg-types
+73 silly mapToRegistry name pg-types
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry uri https://registry.npmjs.org/pg-types
+77 silly fetchNamedPackageData readable-stream
+78 silly mapToRegistry name readable-stream
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+82 verbose request uri https://registry.npmjs.org/libpq
+83 verbose request no auth needed
+84 info attempt registry request try #1 at 3:36:46 PM
+85 http request GET https://registry.npmjs.org/libpq
+86 verbose request uri https://registry.npmjs.org/pg-types
+87 verbose request no auth needed
+88 info attempt registry request try #1 at 3:36:47 PM
+89 verbose etag "3S1GJ0XK5L0WUMKE99SRPVCWB"
+90 http request GET https://registry.npmjs.org/pg-types
+91 verbose request uri https://registry.npmjs.org/readable-stream
+92 verbose request no auth needed
+93 info attempt registry request try #1 at 3:36:47 PM
+94 verbose etag "CCKCVM7AJRG2NFRFL5SINMT9N"
+95 http request GET https://registry.npmjs.org/readable-stream
+96 http 304 https://registry.npmjs.org/readable-stream
+97 verbose headers { date: 'Sat, 22 Oct 2016 13:36:52 GMT',
+97 verbose headers   via: '1.1 varnish',
+97 verbose headers   'cache-control': 'max-age=300',
+97 verbose headers   etag: '"CCKCVM7AJRG2NFRFL5SINMT9N"',
+97 verbose headers   age: '18',
+97 verbose headers   connection: 'keep-alive',
+97 verbose headers   'x-served-by': 'cache-ams4140-AMS',
+97 verbose headers   'x-cache': 'HIT',
+97 verbose headers   'x-cache-hits': '1',
+97 verbose headers   'x-timer': 'S1477143412.845102,VS0,VE0',
+97 verbose headers   vary: 'Accept-Encoding' }
+98 silly get cb [ 304,
+98 silly get   { date: 'Sat, 22 Oct 2016 13:36:52 GMT',
+98 silly get     via: '1.1 varnish',
+98 silly get     'cache-control': 'max-age=300',
+98 silly get     etag: '"CCKCVM7AJRG2NFRFL5SINMT9N"',
+98 silly get     age: '18',
+98 silly get     connection: 'keep-alive',
+98 silly get     'x-served-by': 'cache-ams4140-AMS',
+98 silly get     'x-cache': 'HIT',
+98 silly get     'x-cache-hits': '1',
+98 silly get     'x-timer': 'S1477143412.845102,VS0,VE0',
+98 silly get     vary: 'Accept-Encoding' } ]
+99 verbose etag https://registry.npmjs.org/readable-stream from cache
+100 verbose get saving readable-stream to C:\Users\ruben\AppData\Roaming\npm-cache\registry.npmjs.org\readable-stream\.cache.json
+101 silly resolveWithNewModule readable-stream@1.0.31 checking installable status
+102 silly cache add args [ 'readable-stream@1.0.31', null ]
+103 verbose cache add spec readable-stream@1.0.31
+104 silly cache add parsed spec Result {
+104 silly cache add   raw: 'readable-stream@1.0.31',
+104 silly cache add   scope: null,
+104 silly cache add   name: 'readable-stream',
+104 silly cache add   rawSpec: '1.0.31',
+104 silly cache add   spec: '1.0.31',
+104 silly cache add   type: 'version' }
+105 silly addNamed readable-stream@1.0.31
+106 verbose addNamed "1.0.31" is a plain semver version for readable-stream
+107 silly mapToRegistry name readable-stream
+108 silly mapToRegistry using default registry
+109 silly mapToRegistry registry https://registry.npmjs.org/
+110 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+111 verbose addNameVersion registry:https://registry.npmjs.org/readable-stream not in flight; fetching
+112 verbose get https://registry.npmjs.org/readable-stream not expired, no request
+113 silly mapToRegistry name readable-stream
+114 silly mapToRegistry using default registry
+115 silly mapToRegistry registry https://registry.npmjs.org/
+116 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+117 verbose addRemoteTarball https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz not in flight; adding
+118 verbose addRemoteTarball [ 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz',
+118 verbose addRemoteTarball   '8f2502e0bc9e3b0da1b94520aabb4e2603ecafae' ]
+119 info retry fetch attempt 1 at 3:36:47 PM
+120 info attempt registry request try #1 at 3:36:47 PM
+121 http fetch GET https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz
+122 http 304 https://registry.npmjs.org/pg-types
+123 verbose headers { date: 'Sat, 22 Oct 2016 13:36:52 GMT',
+123 verbose headers   via: '1.1 varnish',
+123 verbose headers   'cache-control': 'max-age=300',
+123 verbose headers   etag: '"3S1GJ0XK5L0WUMKE99SRPVCWB"',
+123 verbose headers   age: '0',
+123 verbose headers   connection: 'keep-alive',
+123 verbose headers   'x-served-by': 'cache-ams4137-AMS',
+123 verbose headers   'x-cache': 'MISS',
+123 verbose headers   'x-cache-hits': '0',
+123 verbose headers   'x-timer': 'S1477143412.619543,VS0,VE377',
+123 verbose headers   vary: 'Accept-Encoding' }
+124 silly get cb [ 304,
+124 silly get   { date: 'Sat, 22 Oct 2016 13:36:52 GMT',
+124 silly get     via: '1.1 varnish',
+124 silly get     'cache-control': 'max-age=300',
+124 silly get     etag: '"3S1GJ0XK5L0WUMKE99SRPVCWB"',
+124 silly get     age: '0',
+124 silly get     connection: 'keep-alive',
+124 silly get     'x-served-by': 'cache-ams4137-AMS',
+124 silly get     'x-cache': 'MISS',
+124 silly get     'x-cache-hits': '0',
+124 silly get     'x-timer': 'S1477143412.619543,VS0,VE377',
+124 silly get     vary: 'Accept-Encoding' } ]
+125 verbose etag https://registry.npmjs.org/pg-types from cache
+126 verbose get saving pg-types to C:\Users\ruben\AppData\Roaming\npm-cache\registry.npmjs.org\pg-types\.cache.json
+127 silly resolveWithNewModule pg-types@1.6.0 checking installable status
+128 silly cache add args [ 'pg-types@1.6.0', null ]
+129 verbose cache add spec pg-types@1.6.0
+130 silly cache add parsed spec Result {
+130 silly cache add   raw: 'pg-types@1.6.0',
+130 silly cache add   scope: null,
+130 silly cache add   name: 'pg-types',
+130 silly cache add   rawSpec: '1.6.0',
+130 silly cache add   spec: '1.6.0',
+130 silly cache add   type: 'version' }
+131 silly addNamed pg-types@1.6.0
+132 verbose addNamed "1.6.0" is a plain semver version for pg-types
+133 silly mapToRegistry name pg-types
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry uri https://registry.npmjs.org/pg-types
+137 verbose addNameVersion registry:https://registry.npmjs.org/pg-types not in flight; fetching
+138 verbose get https://registry.npmjs.org/pg-types not expired, no request
+139 silly mapToRegistry name pg-types
+140 silly mapToRegistry using default registry
+141 silly mapToRegistry registry https://registry.npmjs.org/
+142 silly mapToRegistry uri https://registry.npmjs.org/pg-types
+143 verbose addRemoteTarball https://registry.npmjs.org/pg-types/-/pg-types-1.6.0.tgz not in flight; adding
+144 verbose addRemoteTarball [ 'https://registry.npmjs.org/pg-types/-/pg-types-1.6.0.tgz',
+144 verbose addRemoteTarball   '3872a0f199143025497f4ee2a65fdaf00d7ea8b3' ]
+145 info retry fetch attempt 1 at 3:36:47 PM
+146 info attempt registry request try #1 at 3:36:47 PM
+147 http fetch GET https://registry.npmjs.org/pg-types/-/pg-types-1.6.0.tgz
+148 http fetch 200 https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.31.tgz
+149 silly fetchAndShaCheck shasum 8f2502e0bc9e3b0da1b94520aabb4e2603ecafae
+150 verbose addTmpTarball C:\Users\ruben\AppData\Local\Temp\npm-15700-2192fd25\registry.npmjs.org\readable-stream\-\readable-stream-1.0.31.tgz not in flight; adding
+151 verbose addTmpTarball already have metadata; skipping unpack for readable-stream@1.0.31
+152 silly cache afterAdd readable-stream@1.0.31
+153 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\readable-stream\1.0.31\package\package.json not in flight; writing
+154 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\readable-stream\1.0.31\package\package.json written
+155 http fetch 200 https://registry.npmjs.org/pg-types/-/pg-types-1.6.0.tgz
+156 silly fetchAndShaCheck shasum 3872a0f199143025497f4ee2a65fdaf00d7ea8b3
+157 verbose addTmpTarball C:\Users\ruben\AppData\Local\Temp\npm-15700-2192fd25\registry.npmjs.org\pg-types\-\pg-types-1.6.0.tgz not in flight; adding
+158 verbose addTmpTarball already have metadata; skipping unpack for pg-types@1.6.0
+159 silly cache afterAdd pg-types@1.6.0
+160 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\pg-types\1.6.0\package\package.json not in flight; writing
+161 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\pg-types\1.6.0\package\package.json written
+162 http 200 https://registry.npmjs.org/libpq
+163 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+163 verbose headers   etag: '"7EK05DT4ALA69M6FTMVE236GS"',
+163 verbose headers   'content-type': 'application/json',
+163 verbose headers   'content-encoding': 'gzip',
+163 verbose headers   'cache-control': 'max-age=300',
+163 verbose headers   'content-length': '11888',
+163 verbose headers   'accept-ranges': 'bytes',
+163 verbose headers   date: 'Sat, 22 Oct 2016 13:36:53 GMT',
+163 verbose headers   via: '1.1 varnish',
+163 verbose headers   age: '0',
+163 verbose headers   connection: 'keep-alive',
+163 verbose headers   'x-served-by': 'cache-ams4428-AMS',
+163 verbose headers   'x-cache': 'MISS',
+163 verbose headers   'x-cache-hits': '0',
+163 verbose headers   'x-timer': 'S1477143412.620329,VS0,VE498',
+163 verbose headers   vary: 'Accept-Encoding' }
+164 silly get cb [ 200,
+164 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+164 silly get     etag: '"7EK05DT4ALA69M6FTMVE236GS"',
+164 silly get     'content-type': 'application/json',
+164 silly get     'content-encoding': 'gzip',
+164 silly get     'cache-control': 'max-age=300',
+164 silly get     'content-length': '11888',
+164 silly get     'accept-ranges': 'bytes',
+164 silly get     date: 'Sat, 22 Oct 2016 13:36:53 GMT',
+164 silly get     via: '1.1 varnish',
+164 silly get     age: '0',
+164 silly get     connection: 'keep-alive',
+164 silly get     'x-served-by': 'cache-ams4428-AMS',
+164 silly get     'x-cache': 'MISS',
+164 silly get     'x-cache-hits': '0',
+164 silly get     'x-timer': 'S1477143412.620329,VS0,VE498',
+164 silly get     vary: 'Accept-Encoding' } ]
+165 verbose get saving libpq to C:\Users\ruben\AppData\Roaming\npm-cache\registry.npmjs.org\libpq\.cache.json
+166 silly resolveWithNewModule libpq@1.8.5 checking installable status
+167 silly cache add args [ 'libpq@^1.7.0', null ]
+168 verbose cache add spec libpq@^1.7.0
+169 silly cache add parsed spec Result {
+169 silly cache add   raw: 'libpq@^1.7.0',
+169 silly cache add   scope: null,
+169 silly cache add   name: 'libpq',
+169 silly cache add   rawSpec: '^1.7.0',
+169 silly cache add   spec: '>=1.7.0 <2.0.0',
+169 silly cache add   type: 'range' }
+170 silly addNamed libpq@>=1.7.0 <2.0.0
+171 verbose addNamed ">=1.7.0 <2.0.0" is a valid semver range for libpq
+172 silly addNameRange { name: 'libpq', range: '>=1.7.0 <2.0.0', hasData: false }
+173 silly mapToRegistry name libpq
+174 silly mapToRegistry using default registry
+175 silly mapToRegistry registry https://registry.npmjs.org/
+176 silly mapToRegistry uri https://registry.npmjs.org/libpq
+177 verbose addNameRange registry:https://registry.npmjs.org/libpq not in flight; fetching
+178 verbose get https://registry.npmjs.org/libpq not expired, no request
+179 silly addNameRange number 2 { name: 'libpq', range: '>=1.7.0 <2.0.0', hasData: true }
+180 silly addNameRange versions [ 'libpq',
+180 silly addNameRange   [ '0.2.0',
+180 silly addNameRange     '0.2.1',
+180 silly addNameRange     '0.2.2',
+180 silly addNameRange     '0.2.3',
+180 silly addNameRange     '0.2.4',
+180 silly addNameRange     '0.2.5',
+180 silly addNameRange     '0.3.0',
+180 silly addNameRange     '0.4.0',
+180 silly addNameRange     '0.4.1',
+180 silly addNameRange     '0.5.0',
+180 silly addNameRange     '0.5.1',
+180 silly addNameRange     '0.5.2',
+180 silly addNameRange     '0.5.3',
+180 silly addNameRange     '1.0.0',
+180 silly addNameRange     '1.0.1',
+180 silly addNameRange     '1.1.0',
+180 silly addNameRange     '1.2.0',
+180 silly addNameRange     '1.2.1',
+180 silly addNameRange     '1.3.0',
+180 silly addNameRange     '1.3.1',
+180 silly addNameRange     '1.4.0',
+180 silly addNameRange     '1.4.1',
+180 silly addNameRange     '1.4.2',
+180 silly addNameRange     '1.5.1',
+180 silly addNameRange     '1.6.0',
+180 silly addNameRange     '1.6.1',
+180 silly addNameRange     '1.6.2',
+180 silly addNameRange     '1.6.3',
+180 silly addNameRange     '1.6.4',
+180 silly addNameRange     '1.7.0',
+180 silly addNameRange     '1.8.0',
+180 silly addNameRange     '1.8.1',
+180 silly addNameRange     '1.8.2',
+180 silly addNameRange     '1.8.3',
+180 silly addNameRange     '1.8.4',
+180 silly addNameRange     '1.8.5' ] ]
+181 silly addNamed libpq@1.8.5
+182 verbose addNamed "1.8.5" is a plain semver version for libpq
+183 silly mapToRegistry name libpq
+184 silly mapToRegistry using default registry
+185 silly mapToRegistry registry https://registry.npmjs.org/
+186 silly mapToRegistry uri https://registry.npmjs.org/libpq
+187 verbose addRemoteTarball https://registry.npmjs.org/libpq/-/libpq-1.8.5.tgz not in flight; adding
+188 verbose addRemoteTarball [ 'https://registry.npmjs.org/libpq/-/libpq-1.8.5.tgz',
+188 verbose addRemoteTarball   '9ef5bb509e1658908c19474088031db3dc7d4e48' ]
+189 info retry fetch attempt 1 at 3:36:47 PM
+190 info attempt registry request try #1 at 3:36:47 PM
+191 http fetch GET https://registry.npmjs.org/libpq/-/libpq-1.8.5.tgz
+192 http fetch 200 https://registry.npmjs.org/libpq/-/libpq-1.8.5.tgz
+193 silly fetchAndShaCheck shasum 9ef5bb509e1658908c19474088031db3dc7d4e48
+194 verbose addTmpTarball C:\Users\ruben\AppData\Local\Temp\npm-15700-2192fd25\registry.npmjs.org\libpq\-\libpq-1.8.5.tgz not in flight; adding
+195 verbose addTmpTarball already have metadata; skipping unpack for libpq@1.8.5
+196 silly cache afterAdd libpq@1.8.5
+197 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\libpq\1.8.5\package\package.json not in flight; writing
+198 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\libpq\1.8.5\package\package.json written
+199 silly fetchNamedPackageData nan
+200 silly mapToRegistry name nan
+201 silly mapToRegistry using default registry
+202 silly mapToRegistry registry https://registry.npmjs.org/
+203 silly mapToRegistry uri https://registry.npmjs.org/nan
+204 silly fetchNamedPackageData bindings
+205 silly mapToRegistry name bindings
+206 silly mapToRegistry using default registry
+207 silly mapToRegistry registry https://registry.npmjs.org/
+208 silly mapToRegistry uri https://registry.npmjs.org/bindings
+209 verbose request uri https://registry.npmjs.org/nan
+210 verbose request no auth needed
+211 info attempt registry request try #1 at 3:36:47 PM
+212 http request GET https://registry.npmjs.org/nan
+213 verbose request uri https://registry.npmjs.org/bindings
+214 verbose request no auth needed
+215 info attempt registry request try #1 at 3:36:47 PM
+216 http request GET https://registry.npmjs.org/bindings
+217 http 200 https://registry.npmjs.org/bindings
+218 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+218 verbose headers   etag: '"8QW29MHCPCE6VJCVI3QVXRJAQ"',
+218 verbose headers   'content-type': 'application/json',
+218 verbose headers   'content-encoding': 'gzip',
+218 verbose headers   'cache-control': 'max-age=300',
+218 verbose headers   'content-length': '3832',
+218 verbose headers   'accept-ranges': 'bytes',
+218 verbose headers   date: 'Sat, 22 Oct 2016 13:36:53 GMT',
+218 verbose headers   via: '1.1 varnish',
+218 verbose headers   age: '266',
+218 verbose headers   connection: 'keep-alive',
+218 verbose headers   'x-served-by': 'cache-ams4143-AMS',
+218 verbose headers   'x-cache': 'HIT',
+218 verbose headers   'x-cache-hits': '1',
+218 verbose headers   'x-timer': 'S1477143413.335788,VS0,VE0',
+218 verbose headers   vary: 'Accept-Encoding' }
+219 silly get cb [ 200,
+219 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+219 silly get     etag: '"8QW29MHCPCE6VJCVI3QVXRJAQ"',
+219 silly get     'content-type': 'application/json',
+219 silly get     'content-encoding': 'gzip',
+219 silly get     'cache-control': 'max-age=300',
+219 silly get     'content-length': '3832',
+219 silly get     'accept-ranges': 'bytes',
+219 silly get     date: 'Sat, 22 Oct 2016 13:36:53 GMT',
+219 silly get     via: '1.1 varnish',
+219 silly get     age: '266',
+219 silly get     connection: 'keep-alive',
+219 silly get     'x-served-by': 'cache-ams4143-AMS',
+219 silly get     'x-cache': 'HIT',
+219 silly get     'x-cache-hits': '1',
+219 silly get     'x-timer': 'S1477143413.335788,VS0,VE0',
+219 silly get     vary: 'Accept-Encoding' } ]
+220 verbose get saving bindings to C:\Users\ruben\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+221 http 200 https://registry.npmjs.org/nan
+222 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+222 verbose headers   etag: '"2QXFPVXUU9DUUTAACVV4FOU2Z"',
+222 verbose headers   'content-type': 'application/json',
+222 verbose headers   'content-encoding': 'gzip',
+222 verbose headers   'cache-control': 'max-age=300',
+222 verbose headers   'content-length': '17179',
+222 verbose headers   'accept-ranges': 'bytes',
+222 verbose headers   date: 'Sat, 22 Oct 2016 13:36:53 GMT',
+222 verbose headers   via: '1.1 varnish',
+222 verbose headers   age: '118',
+222 verbose headers   connection: 'keep-alive',
+222 verbose headers   'x-served-by': 'cache-ams4445-AMS',
+222 verbose headers   'x-cache': 'HIT',
+222 verbose headers   'x-cache-hits': '1',
+222 verbose headers   'x-timer': 'S1477143413.319814,VS0,VE0',
+222 verbose headers   vary: 'Accept-Encoding' }
+223 silly get cb [ 200,
+223 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+223 silly get     etag: '"2QXFPVXUU9DUUTAACVV4FOU2Z"',
+223 silly get     'content-type': 'application/json',
+223 silly get     'content-encoding': 'gzip',
+223 silly get     'cache-control': 'max-age=300',
+223 silly get     'content-length': '17179',
+223 silly get     'accept-ranges': 'bytes',
+223 silly get     date: 'Sat, 22 Oct 2016 13:36:53 GMT',
+223 silly get     via: '1.1 varnish',
+223 silly get     age: '118',
+223 silly get     connection: 'keep-alive',
+223 silly get     'x-served-by': 'cache-ams4445-AMS',
+223 silly get     'x-cache': 'HIT',
+223 silly get     'x-cache-hits': '1',
+223 silly get     'x-timer': 'S1477143413.319814,VS0,VE0',
+223 silly get     vary: 'Accept-Encoding' } ]
+224 verbose get saving nan to C:\Users\ruben\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+225 silly resolveWithNewModule nan@2.4.0 checking installable status
+226 silly cache add args [ 'nan@^2.3.0', null ]
+227 verbose cache add spec nan@^2.3.0
+228 silly cache add parsed spec Result {
+228 silly cache add   raw: 'nan@^2.3.0',
+228 silly cache add   scope: null,
+228 silly cache add   name: 'nan',
+228 silly cache add   rawSpec: '^2.3.0',
+228 silly cache add   spec: '>=2.3.0 <3.0.0',
+228 silly cache add   type: 'range' }
+229 silly addNamed nan@>=2.3.0 <3.0.0
+230 verbose addNamed ">=2.3.0 <3.0.0" is a valid semver range for nan
+231 silly addNameRange { name: 'nan', range: '>=2.3.0 <3.0.0', hasData: false }
+232 silly mapToRegistry name nan
+233 silly mapToRegistry using default registry
+234 silly mapToRegistry registry https://registry.npmjs.org/
+235 silly mapToRegistry uri https://registry.npmjs.org/nan
+236 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+237 silly resolveWithNewModule bindings@1.2.1 checking installable status
+238 silly cache add args [ 'bindings@1.2.1', null ]
+239 verbose cache add spec bindings@1.2.1
+240 silly cache add parsed spec Result {
+240 silly cache add   raw: 'bindings@1.2.1',
+240 silly cache add   scope: null,
+240 silly cache add   name: 'bindings',
+240 silly cache add   rawSpec: '1.2.1',
+240 silly cache add   spec: '1.2.1',
+240 silly cache add   type: 'version' }
+241 silly addNamed bindings@1.2.1
+242 verbose addNamed "1.2.1" is a plain semver version for bindings
+243 silly mapToRegistry name bindings
+244 silly mapToRegistry using default registry
+245 silly mapToRegistry registry https://registry.npmjs.org/
+246 silly mapToRegistry uri https://registry.npmjs.org/bindings
+247 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+248 verbose get https://registry.npmjs.org/nan not expired, no request
+249 silly addNameRange number 2 { name: 'nan', range: '>=2.3.0 <3.0.0', hasData: true }
+250 silly addNameRange versions [ 'nan',
+250 silly addNameRange   [ '0.3.0-wip',
+250 silly addNameRange     '0.3.0-wip2',
+250 silly addNameRange     '0.3.0',
+250 silly addNameRange     '0.3.1',
+250 silly addNameRange     '0.3.2',
+250 silly addNameRange     '0.4.0',
+250 silly addNameRange     '0.4.1',
+250 silly addNameRange     '0.4.2',
+250 silly addNameRange     '0.4.3',
+250 silly addNameRange     '0.4.4',
+250 silly addNameRange     '0.5.0',
+250 silly addNameRange     '0.5.1',
+250 silly addNameRange     '0.5.2',
+250 silly addNameRange     '0.6.0',
+250 silly addNameRange     '0.7.0',
+250 silly addNameRange     '0.7.1',
+250 silly addNameRange     '0.8.0',
+250 silly addNameRange     '1.0.0',
+250 silly addNameRange     '1.1.0',
+250 silly addNameRange     '1.1.1',
+250 silly addNameRange     '1.1.2',
+250 silly addNameRange     '1.2.0',
+250 silly addNameRange     '1.3.0',
+250 silly addNameRange     '1.4.0',
+250 silly addNameRange     '1.4.1',
+250 silly addNameRange     '1.5.0',
+250 silly addNameRange     '1.4.2',
+250 silly addNameRange     '1.4.3',
+250 silly addNameRange     '1.5.1',
+250 silly addNameRange     '1.5.2',
+250 silly addNameRange     '1.6.0',
+250 silly addNameRange     '1.5.3',
+250 silly addNameRange     '1.6.1',
+250 silly addNameRange     '1.6.2',
+250 silly addNameRange     '1.7.0',
+250 silly addNameRange     '1.8.0',
+250 silly addNameRange     '1.8.1',
+250 silly addNameRange     '1.8.2',
+250 silly addNameRange     '1.8.3',
+250 silly addNameRange     '1.8.4',
+250 silly addNameRange     '1.9.0',
+250 silly addNameRange     '2.0.0',
+250 silly addNameRange     '2.0.1',
+250 silly addNameRange     '2.0.2',
+250 silly addNameRange     '2.0.3',
+250 silly addNameRange     '2.0.4',
+250 silly addNameRange     '2.0.5',
+250 silly addNameRange     '2.0.6',
+250 silly addNameRange     '2.0.7',
+250 silly addNameRange     '2.0.8',
+250 silly addNameRange     '2.0.9',
+250 silly addNameRange     '2.1.0',
+250 silly addNameRange     '2.2.0',
+250 silly addNameRange     '2.2.1',
+250 silly addNameRange     '2.3.0',
+250 silly addNameRange     '2.3.1',
+250 silly addNameRange     '2.3.2',
+250 silly addNameRange     '2.3.3',
+250 silly addNameRange     '2.3.4',
+250 silly addNameRange     '2.3.5',
+250 silly addNameRange     '2.4.0' ] ]
+251 silly addNamed nan@2.4.0
+252 verbose addNamed "2.4.0" is a plain semver version for nan
+253 verbose get https://registry.npmjs.org/bindings not expired, no request
+254 silly mapToRegistry name nan
+255 silly mapToRegistry using default registry
+256 silly mapToRegistry registry https://registry.npmjs.org/
+257 silly mapToRegistry uri https://registry.npmjs.org/nan
+258 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-2.4.0.tgz not in flight; adding
+259 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-2.4.0.tgz',
+259 verbose addRemoteTarball   'fb3c59d45fe4effe215f0b890f8adf6eb32d2232' ]
+260 silly mapToRegistry name bindings
+261 silly mapToRegistry using default registry
+262 silly mapToRegistry registry https://registry.npmjs.org/
+263 silly mapToRegistry uri https://registry.npmjs.org/bindings
+264 verbose addRemoteTarball https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz not in flight; adding
+265 verbose addRemoteTarball [ 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+265 verbose addRemoteTarball   '14ad6113812d2d37d72e67b4cacb4bb726505f11' ]
+266 info retry fetch attempt 1 at 3:36:47 PM
+267 info attempt registry request try #1 at 3:36:47 PM
+268 http fetch GET https://registry.npmjs.org/nan/-/nan-2.4.0.tgz
+269 info retry fetch attempt 1 at 3:36:47 PM
+270 info attempt registry request try #1 at 3:36:47 PM
+271 http fetch GET https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+272 http fetch 200 https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+273 http fetch 200 https://registry.npmjs.org/nan/-/nan-2.4.0.tgz
+274 silly fetchAndShaCheck shasum 14ad6113812d2d37d72e67b4cacb4bb726505f11
+275 verbose addTmpTarball C:\Users\ruben\AppData\Local\Temp\npm-15700-2192fd25\registry.npmjs.org\bindings\-\bindings-1.2.1.tgz not in flight; adding
+276 verbose addTmpTarball already have metadata; skipping unpack for bindings@1.2.1
+277 silly cache afterAdd bindings@1.2.1
+278 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+279 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
+280 silly fetchAndShaCheck shasum fb3c59d45fe4effe215f0b890f8adf6eb32d2232
+281 verbose addTmpTarball C:\Users\ruben\AppData\Local\Temp\npm-15700-2192fd25\registry.npmjs.org\nan\-\nan-2.4.0.tgz not in flight; adding
+282 verbose addTmpTarball already have metadata; skipping unpack for nan@2.4.0
+283 silly cache afterAdd nan@2.4.0
+284 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\nan\2.4.0\package\package.json not in flight; writing
+285 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\nan\2.4.0\package\package.json written
+286 silly fetchNamedPackageData core-util-is
+287 silly mapToRegistry name core-util-is
+288 silly mapToRegistry using default registry
+289 silly mapToRegistry registry https://registry.npmjs.org/
+290 silly mapToRegistry uri https://registry.npmjs.org/core-util-is
+291 silly fetchNamedPackageData string_decoder
+292 silly mapToRegistry name string_decoder
+293 silly mapToRegistry using default registry
+294 silly mapToRegistry registry https://registry.npmjs.org/
+295 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+296 verbose request uri https://registry.npmjs.org/string_decoder
+297 verbose request no auth needed
+298 info attempt registry request try #1 at 3:36:47 PM
+299 verbose etag "3SLQP4XEWUIBONOV855WOPR0B"
+300 http request GET https://registry.npmjs.org/string_decoder
+301 verbose request uri https://registry.npmjs.org/core-util-is
+302 verbose request no auth needed
+303 info attempt registry request try #1 at 3:36:47 PM
+304 verbose etag "75RK9UUWAHLYO40UZKLLOJ8YF"
+305 http request GET https://registry.npmjs.org/core-util-is
+306 http 304 https://registry.npmjs.org/core-util-is
+307 verbose headers { date: 'Sat, 22 Oct 2016 13:36:53 GMT',
+307 verbose headers   via: '1.1 varnish',
+307 verbose headers   'cache-control': 'max-age=300',
+307 verbose headers   etag: '"75RK9UUWAHLYO40UZKLLOJ8YF"',
+307 verbose headers   age: '70',
+307 verbose headers   connection: 'keep-alive',
+307 verbose headers   'x-served-by': 'cache-ams4448-AMS',
+307 verbose headers   'x-cache': 'HIT',
+307 verbose headers   'x-cache-hits': '3',
+307 verbose headers   'x-timer': 'S1477143413.564127,VS0,VE0',
+307 verbose headers   vary: 'Accept-Encoding' }
+308 silly get cb [ 304,
+308 silly get   { date: 'Sat, 22 Oct 2016 13:36:53 GMT',
+308 silly get     via: '1.1 varnish',
+308 silly get     'cache-control': 'max-age=300',
+308 silly get     etag: '"75RK9UUWAHLYO40UZKLLOJ8YF"',
+308 silly get     age: '70',
+308 silly get     connection: 'keep-alive',
+308 silly get     'x-served-by': 'cache-ams4448-AMS',
+308 silly get     'x-cache': 'HIT',
+308 silly get     'x-cache-hits': '3',
+308 silly get     'x-timer': 'S1477143413.564127,VS0,VE0',
+308 silly get     vary: 'Accept-Encoding' } ]
+309 verbose etag https://registry.npmjs.org/core-util-is from cache
+310 verbose get saving core-util-is to C:\Users\ruben\AppData\Roaming\npm-cache\registry.npmjs.org\core-util-is\.cache.json
+311 silly resolveWithNewModule core-util-is@1.0.2 checking installable status
+312 silly cache add args [ 'core-util-is@~1.0.0', null ]
+313 verbose cache add spec core-util-is@~1.0.0
+314 silly cache add parsed spec Result {
+314 silly cache add   raw: 'core-util-is@~1.0.0',
+314 silly cache add   scope: null,
+314 silly cache add   name: 'core-util-is',
+314 silly cache add   rawSpec: '~1.0.0',
+314 silly cache add   spec: '>=1.0.0 <1.1.0',
+314 silly cache add   type: 'range' }
+315 silly addNamed core-util-is@>=1.0.0 <1.1.0
+316 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for core-util-is
+317 silly addNameRange { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: false }
+318 silly mapToRegistry name core-util-is
+319 silly mapToRegistry using default registry
+320 silly mapToRegistry registry https://registry.npmjs.org/
+321 silly mapToRegistry uri https://registry.npmjs.org/core-util-is
+322 verbose addNameRange registry:https://registry.npmjs.org/core-util-is not in flight; fetching
+323 verbose get https://registry.npmjs.org/core-util-is not expired, no request
+324 silly addNameRange number 2 { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: true }
+325 silly addNameRange versions [ 'core-util-is', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+326 silly addNamed core-util-is@1.0.2
+327 verbose addNamed "1.0.2" is a plain semver version for core-util-is
+328 silly cache afterAdd core-util-is@1.0.2
+329 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\core-util-is\1.0.2\package\package.json not in flight; writing
+330 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\core-util-is\1.0.2\package\package.json written
+331 http 304 https://registry.npmjs.org/string_decoder
+332 verbose headers { date: 'Sat, 22 Oct 2016 13:36:53 GMT',
+332 verbose headers   via: '1.1 varnish',
+332 verbose headers   'cache-control': 'max-age=300',
+332 verbose headers   etag: '"3SLQP4XEWUIBONOV855WOPR0B"',
+332 verbose headers   age: '281',
+332 verbose headers   connection: 'keep-alive',
+332 verbose headers   'x-served-by': 'cache-ams4446-AMS',
+332 verbose headers   'x-cache': 'HIT',
+332 verbose headers   'x-cache-hits': '3',
+332 verbose headers   'x-timer': 'S1477143413.627968,VS0,VE0',
+332 verbose headers   vary: 'Accept-Encoding' }
+333 silly get cb [ 304,
+333 silly get   { date: 'Sat, 22 Oct 2016 13:36:53 GMT',
+333 silly get     via: '1.1 varnish',
+333 silly get     'cache-control': 'max-age=300',
+333 silly get     etag: '"3SLQP4XEWUIBONOV855WOPR0B"',
+333 silly get     age: '281',
+333 silly get     connection: 'keep-alive',
+333 silly get     'x-served-by': 'cache-ams4446-AMS',
+333 silly get     'x-cache': 'HIT',
+333 silly get     'x-cache-hits': '3',
+333 silly get     'x-timer': 'S1477143413.627968,VS0,VE0',
+333 silly get     vary: 'Accept-Encoding' } ]
+334 verbose etag https://registry.npmjs.org/string_decoder from cache
+335 verbose get saving string_decoder to C:\Users\ruben\AppData\Roaming\npm-cache\registry.npmjs.org\string_decoder\.cache.json
+336 silly resolveWithNewModule string_decoder@0.10.31 checking installable status
+337 silly cache add args [ 'string_decoder@~0.10.x', null ]
+338 verbose cache add spec string_decoder@~0.10.x
+339 silly cache add parsed spec Result {
+339 silly cache add   raw: 'string_decoder@~0.10.x',
+339 silly cache add   scope: null,
+339 silly cache add   name: 'string_decoder',
+339 silly cache add   rawSpec: '~0.10.x',
+339 silly cache add   spec: '>=0.10.0 <0.11.0',
+339 silly cache add   type: 'range' }
+340 silly addNamed string_decoder@>=0.10.0 <0.11.0
+341 verbose addNamed ">=0.10.0 <0.11.0" is a valid semver range for string_decoder
+342 silly addNameRange { name: 'string_decoder',
+342 silly addNameRange   range: '>=0.10.0 <0.11.0',
+342 silly addNameRange   hasData: false }
+343 silly mapToRegistry name string_decoder
+344 silly mapToRegistry using default registry
+345 silly mapToRegistry registry https://registry.npmjs.org/
+346 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+347 verbose addNameRange registry:https://registry.npmjs.org/string_decoder not in flight; fetching
+348 verbose get https://registry.npmjs.org/string_decoder not expired, no request
+349 silly addNameRange number 2 { name: 'string_decoder',
+349 silly addNameRange   range: '>=0.10.0 <0.11.0',
+349 silly addNameRange   hasData: true }
+350 silly addNameRange versions [ 'string_decoder',
+350 silly addNameRange   [ '0.0.0',
+350 silly addNameRange     '0.0.1',
+350 silly addNameRange     '0.10.24',
+350 silly addNameRange     '0.11.10',
+350 silly addNameRange     '0.10.25',
+350 silly addNameRange     '0.11.10-1',
+350 silly addNameRange     '0.10.25-1',
+350 silly addNameRange     '0.10.31' ] ]
+351 silly addNamed string_decoder@0.10.31
+352 verbose addNamed "0.10.31" is a plain semver version for string_decoder
+353 silly cache afterAdd string_decoder@0.10.31
+354 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\string_decoder\0.10.31\package\package.json not in flight; writing
+355 verbose afterAdd C:\Users\ruben\AppData\Roaming\npm-cache\string_decoder\0.10.31\package\package.json written
+356 silly loadAllDepsIntoIdealTree Finishing
+357 silly idealTree:prePrune abyteabminute@0.0.0
+357 silly idealTree:prePrune ├── accepts@1.2.13
+357 silly idealTree:prePrune ├── acorn-globals@1.0.9
+357 silly idealTree:prePrune ├── acorn@2.7.0
+357 silly idealTree:prePrune ├── after@0.8.1
+357 silly idealTree:prePrune ├── align-text@0.1.4
+357 silly idealTree:prePrune ├── amdefine@1.0.0
+357 silly idealTree:prePrune ├── ap@0.2.0
+357 silly idealTree:prePrune ├── array-flatten@1.1.1
+357 silly idealTree:prePrune ├── arraybuffer.slice@0.0.6
+357 silly idealTree:prePrune ├── asap@1.0.0
+357 silly idealTree:prePrune ├── async@0.2.10
+357 silly idealTree:prePrune ├── backo2@1.0.2
+357 silly idealTree:prePrune ├── base64-arraybuffer@0.1.5
+357 silly idealTree:prePrune ├── base64id@0.1.0
+357 silly idealTree:prePrune ├── basic-auth@1.0.4
+357 silly idealTree:prePrune ├── benchmark@1.0.0
+357 silly idealTree:prePrune ├── better-assert@1.0.2
+357 silly idealTree:prePrune ├── bindings@1.2.1
+357 silly idealTree:prePrune ├── blob@0.0.4
+357 silly idealTree:prePrune ├── body-parser@1.15.2
+357 silly idealTree:prePrune ├── buffer-writer@1.0.1
+357 silly idealTree:prePrune ├── bytes@2.4.0
+357 silly idealTree:prePrune ├── callsite@1.0.0
+357 silly idealTree:prePrune ├── camelcase@1.2.1
+357 silly idealTree:prePrune ├── center-align@0.1.3
+357 silly idealTree:prePrune ├── character-parser@1.2.1
+357 silly idealTree:prePrune ├─┬ clean-css@3.4.20
+357 silly idealTree:prePrune │ └── commander@2.8.1
+357 silly idealTree:prePrune ├─┬ cliui@2.1.0
+357 silly idealTree:prePrune │ └── wordwrap@0.0.2
+357 silly idealTree:prePrune ├── commander@2.6.0
+357 silly idealTree:prePrune ├── component-bind@1.0.0
+357 silly idealTree:prePrune ├── component-emitter@1.1.2
+357 silly idealTree:prePrune ├── component-inherit@0.0.3
+357 silly idealTree:prePrune ├── constantinople@3.0.2
+357 silly idealTree:prePrune ├── content-disposition@0.5.1
+357 silly idealTree:prePrune ├── content-type@1.0.2
+357 silly idealTree:prePrune ├── cookie-parser@1.4.3
+357 silly idealTree:prePrune ├── cookie-signature@1.0.6
+357 silly idealTree:prePrune ├── cookie@0.3.1
+357 silly idealTree:prePrune ├── core-util-is@1.0.2
+357 silly idealTree:prePrune ├── css-parse@1.0.4
+357 silly idealTree:prePrune ├── css-stringify@1.0.5
+357 silly idealTree:prePrune ├── css@1.0.8
+357 silly idealTree:prePrune ├── debug@2.2.0
+357 silly idealTree:prePrune ├── decamelize@1.2.0
+357 silly idealTree:prePrune ├── depd@1.1.0
+357 silly idealTree:prePrune ├── destroy@1.0.4
+357 silly idealTree:prePrune ├── ee-first@1.1.1
+357 silly idealTree:prePrune ├── engine.io-client@1.7.0
+357 silly idealTree:prePrune ├─┬ engine.io-parser@1.3.0
+357 silly idealTree:prePrune │ └── has-binary@0.1.6
+357 silly idealTree:prePrune ├─┬ engine.io@1.7.0
+357 silly idealTree:prePrune │ ├── accepts@1.3.3
+357 silly idealTree:prePrune │ └── negotiator@0.6.1
+357 silly idealTree:prePrune ├── escape-html@1.0.3
+357 silly idealTree:prePrune ├── etag@1.7.0
+357 silly idealTree:prePrune ├─┬ express@4.13.4
+357 silly idealTree:prePrune │ ├── cookie@0.1.5
+357 silly idealTree:prePrune │ └── qs@4.0.0
+357 silly idealTree:prePrune ├── finalhandler@0.4.1
+357 silly idealTree:prePrune ├── forwarded@0.1.0
+357 silly idealTree:prePrune ├── fresh@0.3.0
+357 silly idealTree:prePrune ├── generic-pool@2.4.2
+357 silly idealTree:prePrune ├── graceful-readlink@1.0.1
+357 silly idealTree:prePrune ├── has-binary@0.1.7
+357 silly idealTree:prePrune ├── has-cors@1.1.0
+357 silly idealTree:prePrune ├── http-errors@1.5.0
+357 silly idealTree:prePrune ├── iconv-lite@0.4.13
+357 silly idealTree:prePrune ├── indexof@0.0.1
+357 silly idealTree:prePrune ├── inherits@2.0.1
+357 silly idealTree:prePrune ├── ipaddr.js@1.0.5
+357 silly idealTree:prePrune ├── is-buffer@1.1.4
+357 silly idealTree:prePrune ├── is-promise@2.1.0
+357 silly idealTree:prePrune ├── isarray@0.0.1
+357 silly idealTree:prePrune ├── jade@1.11.0
+357 silly idealTree:prePrune ├── json3@3.2.6
+357 silly idealTree:prePrune ├── jstransformer@0.0.2
+357 silly idealTree:prePrune ├── kind-of@3.0.4
+357 silly idealTree:prePrune ├── lazy-cache@1.0.4
+357 silly idealTree:prePrune ├── libpq@1.8.5
+357 silly idealTree:prePrune ├── longest@1.0.1
+357 silly idealTree:prePrune ├── media-typer@0.3.0
+357 silly idealTree:prePrune ├── merge-descriptors@1.0.1
+357 silly idealTree:prePrune ├── methods@1.1.2
+357 silly idealTree:prePrune ├── mime-db@1.24.0
+357 silly idealTree:prePrune ├── mime-types@2.1.12
+357 silly idealTree:prePrune ├── mime@1.3.4
+357 silly idealTree:prePrune ├── minimist@0.0.8
+357 silly idealTree:prePrune ├── mkdirp@0.5.1
+357 silly idealTree:prePrune ├── morgan@1.7.0
+357 silly idealTree:prePrune ├── ms@0.7.1
+357 silly idealTree:prePrune ├── nan@2.4.0
+357 silly idealTree:prePrune ├── negotiator@0.5.3
+357 silly idealTree:prePrune ├── object-assign@4.1.0
+357 silly idealTree:prePrune ├── object-component@0.0.3
+357 silly idealTree:prePrune ├── on-finished@2.3.0
+357 silly idealTree:prePrune ├── on-headers@1.0.1
+357 silly idealTree:prePrune ├── optimist@0.3.7
+357 silly idealTree:prePrune ├── options@0.0.6
+357 silly idealTree:prePrune ├── packet-reader@0.2.0
+357 silly idealTree:prePrune ├── parsejson@0.0.1
+357 silly idealTree:prePrune ├── parseqs@0.0.2
+357 silly idealTree:prePrune ├── parseuri@0.0.4
+357 silly idealTree:prePrune ├── parseurl@1.3.1
+357 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+357 silly idealTree:prePrune ├── pg-connection-string@0.1.3
+357 silly idealTree:prePrune ├─┬ pg-native@1.10.0
+357 silly idealTree:prePrune │ └── pg-types@1.6.0
+357 silly idealTree:prePrune ├── pg-pool@1.5.0
+357 silly idealTree:prePrune ├── pg-types@1.11.0
+357 silly idealTree:prePrune ├── pg@6.1.0
+357 silly idealTree:prePrune ├── pgpass@1.0.1
+357 silly idealTree:prePrune ├── postgres-array@1.0.0
+357 silly idealTree:prePrune ├── postgres-bytea@1.0.0
+357 silly idealTree:prePrune ├── postgres-date@1.0.3
+357 silly idealTree:prePrune ├── postgres-interval@1.0.2
+357 silly idealTree:prePrune ├── promise@6.1.0
+357 silly idealTree:prePrune ├── proxy-addr@1.0.10
+357 silly idealTree:prePrune ├── qs@6.2.0
+357 silly idealTree:prePrune ├── range-parser@1.0.3
+357 silly idealTree:prePrune ├── raw-body@2.1.7
+357 silly idealTree:prePrune ├── readable-stream@1.0.31
+357 silly idealTree:prePrune ├── repeat-string@1.5.4
+357 silly idealTree:prePrune ├── right-align@0.1.3
+357 silly idealTree:prePrune ├── semver@4.3.2
+357 silly idealTree:prePrune ├─┬ send@0.13.1
+357 silly idealTree:prePrune │ ├── http-errors@1.3.1
+357 silly idealTree:prePrune │ └── statuses@1.2.1
+357 silly idealTree:prePrune ├── serve-favicon@2.3.0
+357 silly idealTree:prePrune ├─┬ serve-static@1.10.3
+357 silly idealTree:prePrune │ ├── http-errors@1.3.1
+357 silly idealTree:prePrune │ ├── send@0.13.2
+357 silly idealTree:prePrune │ └── statuses@1.2.1
+357 silly idealTree:prePrune ├── setprototypeof@1.0.1
+357 silly idealTree:prePrune ├─┬ socket.io-adapter@0.4.0
+357 silly idealTree:prePrune │ └─┬ socket.io-parser@2.2.2
+357 silly idealTree:prePrune │   └── debug@0.7.4
+357 silly idealTree:prePrune ├─┬ socket.io-client@1.5.0
+357 silly idealTree:prePrune │ └── component-emitter@1.2.0
+357 silly idealTree:prePrune ├─┬ socket.io-parser@2.2.6
+357 silly idealTree:prePrune │ └── json3@3.3.2
+357 silly idealTree:prePrune ├── socket.io@1.5.0
+357 silly idealTree:prePrune ├── source-map@0.4.4
+357 silly idealTree:prePrune ├── split@1.0.0
+357 silly idealTree:prePrune ├── statuses@1.3.0
+357 silly idealTree:prePrune ├── string_decoder@0.10.31
+357 silly idealTree:prePrune ├── through@2.3.8
+357 silly idealTree:prePrune ├── to-array@0.1.4
+357 silly idealTree:prePrune ├─┬ transformers@2.1.0
+357 silly idealTree:prePrune │ ├── is-promise@1.0.1
+357 silly idealTree:prePrune │ ├── promise@2.0.0
+357 silly idealTree:prePrune │ ├── source-map@0.1.43
+357 silly idealTree:prePrune │ └── uglify-js@2.2.5
+357 silly idealTree:prePrune ├── type-is@1.6.13
+357 silly idealTree:prePrune ├─┬ uglify-js@2.7.3
+357 silly idealTree:prePrune │ └── source-map@0.5.6
+357 silly idealTree:prePrune ├── uglify-to-browserify@1.0.2
+357 silly idealTree:prePrune ├── ultron@1.0.2
+357 silly idealTree:prePrune ├── unpipe@1.0.0
+357 silly idealTree:prePrune ├── utils-merge@1.0.0
+357 silly idealTree:prePrune ├── vary@1.0.1
+357 silly idealTree:prePrune ├── void-elements@2.0.1
+357 silly idealTree:prePrune ├── window-size@0.1.0
+357 silly idealTree:prePrune ├─┬ with@4.0.3
+357 silly idealTree:prePrune │ └── acorn@1.2.2
+357 silly idealTree:prePrune ├── wordwrap@0.0.3
+357 silly idealTree:prePrune ├── ws@1.1.1
+357 silly idealTree:prePrune ├── wtf-8@1.0.0
+357 silly idealTree:prePrune ├── xmlhttprequest-ssl@1.5.1
+357 silly idealTree:prePrune ├── xtend@4.0.1
+357 silly idealTree:prePrune ├── yargs@3.10.0
+357 silly idealTree:prePrune └── yeast@0.1.2
+358 silly loadIdealTree Finishing
+359 silly currentTree abyteabminute@0.0.0
+359 silly currentTree ├── accepts@1.2.13
+359 silly currentTree ├── acorn-globals@1.0.9
+359 silly currentTree ├── acorn@2.7.0
+359 silly currentTree ├── after@0.8.1
+359 silly currentTree ├── align-text@0.1.4
+359 silly currentTree ├── amdefine@1.0.0
+359 silly currentTree ├── ap@0.2.0
+359 silly currentTree ├── array-flatten@1.1.1
+359 silly currentTree ├── arraybuffer.slice@0.0.6
+359 silly currentTree ├── asap@1.0.0
+359 silly currentTree ├── async@0.2.10
+359 silly currentTree ├── backo2@1.0.2
+359 silly currentTree ├── base64-arraybuffer@0.1.5
+359 silly currentTree ├── base64id@0.1.0
+359 silly currentTree ├── basic-auth@1.0.4
+359 silly currentTree ├── benchmark@1.0.0
+359 silly currentTree ├── better-assert@1.0.2
+359 silly currentTree ├── blob@0.0.4
+359 silly currentTree ├── body-parser@1.15.2
+359 silly currentTree ├── buffer-writer@1.0.1
+359 silly currentTree ├── bytes@2.4.0
+359 silly currentTree ├── callsite@1.0.0
+359 silly currentTree ├── camelcase@1.2.1
+359 silly currentTree ├── center-align@0.1.3
+359 silly currentTree ├── character-parser@1.2.1
+359 silly currentTree ├─┬ clean-css@3.4.20
+359 silly currentTree │ └── commander@2.8.1
+359 silly currentTree ├─┬ cliui@2.1.0
+359 silly currentTree │ └── wordwrap@0.0.2
+359 silly currentTree ├── commander@2.6.0
+359 silly currentTree ├── component-bind@1.0.0
+359 silly currentTree ├── component-emitter@1.1.2
+359 silly currentTree ├── component-inherit@0.0.3
+359 silly currentTree ├── constantinople@3.0.2
+359 silly currentTree ├── content-disposition@0.5.1
+359 silly currentTree ├── content-type@1.0.2
+359 silly currentTree ├── cookie-parser@1.4.3
+359 silly currentTree ├── cookie-signature@1.0.6
+359 silly currentTree ├── cookie@0.3.1
+359 silly currentTree ├── css-parse@1.0.4
+359 silly currentTree ├── css-stringify@1.0.5
+359 silly currentTree ├── css@1.0.8
+359 silly currentTree ├── debug@2.2.0
+359 silly currentTree ├── decamelize@1.2.0
+359 silly currentTree ├── depd@1.1.0
+359 silly currentTree ├── destroy@1.0.4
+359 silly currentTree ├── ee-first@1.1.1
+359 silly currentTree ├── engine.io-client@1.7.0
+359 silly currentTree ├─┬ engine.io-parser@1.3.0
+359 silly currentTree │ └── has-binary@0.1.6
+359 silly currentTree ├─┬ engine.io@1.7.0
+359 silly currentTree │ ├── accepts@1.3.3
+359 silly currentTree │ └── negotiator@0.6.1
+359 silly currentTree ├── escape-html@1.0.3
+359 silly currentTree ├── etag@1.7.0
+359 silly currentTree ├─┬ express@4.13.4
+359 silly currentTree │ ├── cookie@0.1.5
+359 silly currentTree │ └── qs@4.0.0
+359 silly currentTree ├── finalhandler@0.4.1
+359 silly currentTree ├── forwarded@0.1.0
+359 silly currentTree ├── fresh@0.3.0
+359 silly currentTree ├── generic-pool@2.4.2
+359 silly currentTree ├── graceful-readlink@1.0.1
+359 silly currentTree ├── has-binary@0.1.7
+359 silly currentTree ├── has-cors@1.1.0
+359 silly currentTree ├── http-errors@1.5.0
+359 silly currentTree ├── iconv-lite@0.4.13
+359 silly currentTree ├── indexof@0.0.1
+359 silly currentTree ├── inherits@2.0.1
+359 silly currentTree ├── ipaddr.js@1.0.5
+359 silly currentTree ├── is-buffer@1.1.4
+359 silly currentTree ├── is-promise@2.1.0
+359 silly currentTree ├── isarray@0.0.1
+359 silly currentTree ├── jade@1.11.0
+359 silly currentTree ├── json3@3.2.6
+359 silly currentTree ├── jstransformer@0.0.2
+359 silly currentTree ├── kind-of@3.0.4
+359 silly currentTree ├── lazy-cache@1.0.4
+359 silly currentTree ├── longest@1.0.1
+359 silly currentTree ├── media-typer@0.3.0
+359 silly currentTree ├── merge-descriptors@1.0.1
+359 silly currentTree ├── methods@1.1.2
+359 silly currentTree ├── mime-db@1.24.0
+359 silly currentTree ├── mime-types@2.1.12
+359 silly currentTree ├── mime@1.3.4
+359 silly currentTree ├── minimist@0.0.8
+359 silly currentTree ├── mkdirp@0.5.1
+359 silly currentTree ├── morgan@1.7.0
+359 silly currentTree ├── ms@0.7.1
+359 silly currentTree ├── negotiator@0.5.3
+359 silly currentTree ├── object-assign@4.1.0
+359 silly currentTree ├── object-component@0.0.3
+359 silly currentTree ├── on-finished@2.3.0
+359 silly currentTree ├── on-headers@1.0.1
+359 silly currentTree ├── optimist@0.3.7
+359 silly currentTree ├── options@0.0.6
+359 silly currentTree ├── packet-reader@0.2.0
+359 silly currentTree ├── parsejson@0.0.1
+359 silly currentTree ├── parseqs@0.0.2
+359 silly currentTree ├── parseuri@0.0.4
+359 silly currentTree ├── parseurl@1.3.1
+359 silly currentTree ├── path-to-regexp@0.1.7
+359 silly currentTree ├── pg-connection-string@0.1.3
+359 silly currentTree ├── pg-pool@1.5.0
+359 silly currentTree ├── pg-types@1.11.0
+359 silly currentTree ├── pg@6.1.0
+359 silly currentTree ├── pgpass@1.0.1
+359 silly currentTree ├── postgres-array@1.0.0
+359 silly currentTree ├── postgres-bytea@1.0.0
+359 silly currentTree ├── postgres-date@1.0.3
+359 silly currentTree ├── postgres-interval@1.0.2
+359 silly currentTree ├── promise@6.1.0
+359 silly currentTree ├── proxy-addr@1.0.10
+359 silly currentTree ├── qs@6.2.0
+359 silly currentTree ├── range-parser@1.0.3
+359 silly currentTree ├── raw-body@2.1.7
+359 silly currentTree ├── repeat-string@1.5.4
+359 silly currentTree ├── right-align@0.1.3
+359 silly currentTree ├── semver@4.3.2
+359 silly currentTree ├─┬ send@0.13.1
+359 silly currentTree │ ├── http-errors@1.3.1
+359 silly currentTree │ └── statuses@1.2.1
+359 silly currentTree ├── serve-favicon@2.3.0
+359 silly currentTree ├─┬ serve-static@1.10.3
+359 silly currentTree │ ├── http-errors@1.3.1
+359 silly currentTree │ ├── send@0.13.2
+359 silly currentTree │ └── statuses@1.2.1
+359 silly currentTree ├── setprototypeof@1.0.1
+359 silly currentTree ├─┬ socket.io-adapter@0.4.0
+359 silly currentTree │ └─┬ socket.io-parser@2.2.2
+359 silly currentTree │   └── debug@0.7.4
+359 silly currentTree ├─┬ socket.io-client@1.5.0
+359 silly currentTree │ └── component-emitter@1.2.0
+359 silly currentTree ├─┬ socket.io-parser@2.2.6
+359 silly currentTree │ └── json3@3.3.2
+359 silly currentTree ├── socket.io@1.5.0
+359 silly currentTree ├── source-map@0.4.4
+359 silly currentTree ├── split@1.0.0
+359 silly currentTree ├── statuses@1.3.0
+359 silly currentTree ├── through@2.3.8
+359 silly currentTree ├── to-array@0.1.4
+359 silly currentTree ├─┬ transformers@2.1.0
+359 silly currentTree │ ├── is-promise@1.0.1
+359 silly currentTree │ ├── promise@2.0.0
+359 silly currentTree │ ├── source-map@0.1.43
+359 silly currentTree │ └── uglify-js@2.2.5
+359 silly currentTree ├── type-is@1.6.13
+359 silly currentTree ├─┬ uglify-js@2.7.3
+359 silly currentTree │ └── source-map@0.5.6
+359 silly currentTree ├── uglify-to-browserify@1.0.2
+359 silly currentTree ├── ultron@1.0.2
+359 silly currentTree ├── unpipe@1.0.0
+359 silly currentTree ├── utils-merge@1.0.0
+359 silly currentTree ├── vary@1.0.1
+359 silly currentTree ├── void-elements@2.0.1
+359 silly currentTree ├── window-size@0.1.0
+359 silly currentTree ├─┬ with@4.0.3
+359 silly currentTree │ └── acorn@1.2.2
+359 silly currentTree ├── wordwrap@0.0.3
+359 silly currentTree ├── ws@1.1.1
+359 silly currentTree ├── wtf-8@1.0.0
+359 silly currentTree ├── xmlhttprequest-ssl@1.5.1
+359 silly currentTree ├── xtend@4.0.1
+359 silly currentTree ├── yargs@3.10.0
+359 silly currentTree └── yeast@0.1.2
+360 silly idealTree abyteabminute@0.0.0
+360 silly idealTree ├── accepts@1.2.13
+360 silly idealTree ├── acorn-globals@1.0.9
+360 silly idealTree ├── acorn@2.7.0
+360 silly idealTree ├── after@0.8.1
+360 silly idealTree ├── align-text@0.1.4
+360 silly idealTree ├── amdefine@1.0.0
+360 silly idealTree ├── ap@0.2.0
+360 silly idealTree ├── array-flatten@1.1.1
+360 silly idealTree ├── arraybuffer.slice@0.0.6
+360 silly idealTree ├── asap@1.0.0
+360 silly idealTree ├── async@0.2.10
+360 silly idealTree ├── backo2@1.0.2
+360 silly idealTree ├── base64-arraybuffer@0.1.5
+360 silly idealTree ├── base64id@0.1.0
+360 silly idealTree ├── basic-auth@1.0.4
+360 silly idealTree ├── benchmark@1.0.0
+360 silly idealTree ├── better-assert@1.0.2
+360 silly idealTree ├── bindings@1.2.1
+360 silly idealTree ├── blob@0.0.4
+360 silly idealTree ├── body-parser@1.15.2
+360 silly idealTree ├── buffer-writer@1.0.1
+360 silly idealTree ├── bytes@2.4.0
+360 silly idealTree ├── callsite@1.0.0
+360 silly idealTree ├── camelcase@1.2.1
+360 silly idealTree ├── center-align@0.1.3
+360 silly idealTree ├── character-parser@1.2.1
+360 silly idealTree ├─┬ clean-css@3.4.20
+360 silly idealTree │ └── commander@2.8.1
+360 silly idealTree ├─┬ cliui@2.1.0
+360 silly idealTree │ └── wordwrap@0.0.2
+360 silly idealTree ├── commander@2.6.0
+360 silly idealTree ├── component-bind@1.0.0
+360 silly idealTree ├── component-emitter@1.1.2
+360 silly idealTree ├── component-inherit@0.0.3
+360 silly idealTree ├── constantinople@3.0.2
+360 silly idealTree ├── content-disposition@0.5.1
+360 silly idealTree ├── content-type@1.0.2
+360 silly idealTree ├── cookie-parser@1.4.3
+360 silly idealTree ├── cookie-signature@1.0.6
+360 silly idealTree ├── cookie@0.3.1
+360 silly idealTree ├── core-util-is@1.0.2
+360 silly idealTree ├── css-parse@1.0.4
+360 silly idealTree ├── css-stringify@1.0.5
+360 silly idealTree ├── css@1.0.8
+360 silly idealTree ├── debug@2.2.0
+360 silly idealTree ├── decamelize@1.2.0
+360 silly idealTree ├── depd@1.1.0
+360 silly idealTree ├── destroy@1.0.4
+360 silly idealTree ├── ee-first@1.1.1
+360 silly idealTree ├── engine.io-client@1.7.0
+360 silly idealTree ├─┬ engine.io-parser@1.3.0
+360 silly idealTree │ └── has-binary@0.1.6
+360 silly idealTree ├─┬ engine.io@1.7.0
+360 silly idealTree │ ├── accepts@1.3.3
+360 silly idealTree │ └── negotiator@0.6.1
+360 silly idealTree ├── escape-html@1.0.3
+360 silly idealTree ├── etag@1.7.0
+360 silly idealTree ├─┬ express@4.13.4
+360 silly idealTree │ ├── cookie@0.1.5
+360 silly idealTree │ └── qs@4.0.0
+360 silly idealTree ├── finalhandler@0.4.1
+360 silly idealTree ├── forwarded@0.1.0
+360 silly idealTree ├── fresh@0.3.0
+360 silly idealTree ├── generic-pool@2.4.2
+360 silly idealTree ├── graceful-readlink@1.0.1
+360 silly idealTree ├── has-binary@0.1.7
+360 silly idealTree ├── has-cors@1.1.0
+360 silly idealTree ├── http-errors@1.5.0
+360 silly idealTree ├── iconv-lite@0.4.13
+360 silly idealTree ├── indexof@0.0.1
+360 silly idealTree ├── inherits@2.0.1
+360 silly idealTree ├── ipaddr.js@1.0.5
+360 silly idealTree ├── is-buffer@1.1.4
+360 silly idealTree ├── is-promise@2.1.0
+360 silly idealTree ├── isarray@0.0.1
+360 silly idealTree ├── jade@1.11.0
+360 silly idealTree ├── json3@3.2.6
+360 silly idealTree ├── jstransformer@0.0.2
+360 silly idealTree ├── kind-of@3.0.4
+360 silly idealTree ├── lazy-cache@1.0.4
+360 silly idealTree ├── libpq@1.8.5
+360 silly idealTree ├── longest@1.0.1
+360 silly idealTree ├── media-typer@0.3.0
+360 silly idealTree ├── merge-descriptors@1.0.1
+360 silly idealTree ├── methods@1.1.2
+360 silly idealTree ├── mime-db@1.24.0
+360 silly idealTree ├── mime-types@2.1.12
+360 silly idealTree ├── mime@1.3.4
+360 silly idealTree ├── minimist@0.0.8
+360 silly idealTree ├── mkdirp@0.5.1
+360 silly idealTree ├── morgan@1.7.0
+360 silly idealTree ├── ms@0.7.1
+360 silly idealTree ├── nan@2.4.0
+360 silly idealTree ├── negotiator@0.5.3
+360 silly idealTree ├── object-assign@4.1.0
+360 silly idealTree ├── object-component@0.0.3
+360 silly idealTree ├── on-finished@2.3.0
+360 silly idealTree ├── on-headers@1.0.1
+360 silly idealTree ├── optimist@0.3.7
+360 silly idealTree ├── options@0.0.6
+360 silly idealTree ├── packet-reader@0.2.0
+360 silly idealTree ├── parsejson@0.0.1
+360 silly idealTree ├── parseqs@0.0.2
+360 silly idealTree ├── parseuri@0.0.4
+360 silly idealTree ├── parseurl@1.3.1
+360 silly idealTree ├── path-to-regexp@0.1.7
+360 silly idealTree ├── pg-connection-string@0.1.3
+360 silly idealTree ├─┬ pg-native@1.10.0
+360 silly idealTree │ └── pg-types@1.6.0
+360 silly idealTree ├── pg-pool@1.5.0
+360 silly idealTree ├── pg-types@1.11.0
+360 silly idealTree ├── pg@6.1.0
+360 silly idealTree ├── pgpass@1.0.1
+360 silly idealTree ├── postgres-array@1.0.0
+360 silly idealTree ├── postgres-bytea@1.0.0
+360 silly idealTree ├── postgres-date@1.0.3
+360 silly idealTree ├── postgres-interval@1.0.2
+360 silly idealTree ├── promise@6.1.0
+360 silly idealTree ├── proxy-addr@1.0.10
+360 silly idealTree ├── qs@6.2.0
+360 silly idealTree ├── range-parser@1.0.3
+360 silly idealTree ├── raw-body@2.1.7
+360 silly idealTree ├── readable-stream@1.0.31
+360 silly idealTree ├── repeat-string@1.5.4
+360 silly idealTree ├── right-align@0.1.3
+360 silly idealTree ├── semver@4.3.2
+360 silly idealTree ├─┬ send@0.13.1
+360 silly idealTree │ ├── http-errors@1.3.1
+360 silly idealTree │ └── statuses@1.2.1
+360 silly idealTree ├── serve-favicon@2.3.0
+360 silly idealTree ├─┬ serve-static@1.10.3
+360 silly idealTree │ ├── http-errors@1.3.1
+360 silly idealTree │ ├── send@0.13.2
+360 silly idealTree │ └── statuses@1.2.1
+360 silly idealTree ├── setprototypeof@1.0.1
+360 silly idealTree ├─┬ socket.io-adapter@0.4.0
+360 silly idealTree │ └─┬ socket.io-parser@2.2.2
+360 silly idealTree │   └── debug@0.7.4
+360 silly idealTree ├─┬ socket.io-client@1.5.0
+360 silly idealTree │ └── component-emitter@1.2.0
+360 silly idealTree ├─┬ socket.io-parser@2.2.6
+360 silly idealTree │ └── json3@3.3.2
+360 silly idealTree ├── socket.io@1.5.0
+360 silly idealTree ├── source-map@0.4.4
+360 silly idealTree ├── split@1.0.0
+360 silly idealTree ├── statuses@1.3.0
+360 silly idealTree ├── string_decoder@0.10.31
+360 silly idealTree ├── through@2.3.8
+360 silly idealTree ├── to-array@0.1.4
+360 silly idealTree ├─┬ transformers@2.1.0
+360 silly idealTree │ ├── is-promise@1.0.1
+360 silly idealTree │ ├── promise@2.0.0
+360 silly idealTree │ ├── source-map@0.1.43
+360 silly idealTree │ └── uglify-js@2.2.5
+360 silly idealTree ├── type-is@1.6.13
+360 silly idealTree ├─┬ uglify-js@2.7.3
+360 silly idealTree │ └── source-map@0.5.6
+360 silly idealTree ├── uglify-to-browserify@1.0.2
+360 silly idealTree ├── ultron@1.0.2
+360 silly idealTree ├── unpipe@1.0.0
+360 silly idealTree ├── utils-merge@1.0.0
+360 silly idealTree ├── vary@1.0.1
+360 silly idealTree ├── void-elements@2.0.1
+360 silly idealTree ├── window-size@0.1.0
+360 silly idealTree ├─┬ with@4.0.3
+360 silly idealTree │ └── acorn@1.2.2
+360 silly idealTree ├── wordwrap@0.0.3
+360 silly idealTree ├── ws@1.1.1
+360 silly idealTree ├── wtf-8@1.0.0
+360 silly idealTree ├── xmlhttprequest-ssl@1.5.1
+360 silly idealTree ├── xtend@4.0.1
+360 silly idealTree ├── yargs@3.10.0
+360 silly idealTree └── yeast@0.1.2
+361 silly generateActionsToTake Starting
+362 silly install generateActionsToTake
+363 silly generateActionsToTake Finishing
+364 silly diffTrees action count 8
+365 silly diffTrees add bindings@1.2.1
+366 silly diffTrees add core-util-is@1.0.2
+367 silly diffTrees add nan@2.4.0
+368 silly diffTrees add libpq@1.8.5
+369 silly diffTrees add pg-types@1.6.0
+370 silly diffTrees add string_decoder@0.10.31
+371 silly diffTrees add readable-stream@1.0.31
+372 silly diffTrees add pg-native@1.10.0
+373 silly decomposeActions action count 64
+374 silly decomposeActions fetch bindings@1.2.1
+375 silly decomposeActions extract bindings@1.2.1
+376 silly decomposeActions preinstall bindings@1.2.1
+377 silly decomposeActions build bindings@1.2.1
+378 silly decomposeActions install bindings@1.2.1
+379 silly decomposeActions postinstall bindings@1.2.1
+380 silly decomposeActions test bindings@1.2.1
+381 silly decomposeActions finalize bindings@1.2.1
+382 silly decomposeActions fetch core-util-is@1.0.2
+383 silly decomposeActions extract core-util-is@1.0.2
+384 silly decomposeActions preinstall core-util-is@1.0.2
+385 silly decomposeActions build core-util-is@1.0.2
+386 silly decomposeActions install core-util-is@1.0.2
+387 silly decomposeActions postinstall core-util-is@1.0.2
+388 silly decomposeActions test core-util-is@1.0.2
+389 silly decomposeActions finalize core-util-is@1.0.2
+390 silly decomposeActions fetch nan@2.4.0
+391 silly decomposeActions extract nan@2.4.0
+392 silly decomposeActions preinstall nan@2.4.0
+393 silly decomposeActions build nan@2.4.0
+394 silly decomposeActions install nan@2.4.0
+395 silly decomposeActions postinstall nan@2.4.0
+396 silly decomposeActions test nan@2.4.0
+397 silly decomposeActions finalize nan@2.4.0
+398 silly decomposeActions fetch libpq@1.8.5
+399 silly decomposeActions extract libpq@1.8.5
+400 silly decomposeActions preinstall libpq@1.8.5
+401 silly decomposeActions build libpq@1.8.5
+402 silly decomposeActions install libpq@1.8.5
+403 silly decomposeActions postinstall libpq@1.8.5
+404 silly decomposeActions test libpq@1.8.5
+405 silly decomposeActions finalize libpq@1.8.5
+406 silly decomposeActions fetch pg-types@1.6.0
+407 silly decomposeActions extract pg-types@1.6.0
+408 silly decomposeActions preinstall pg-types@1.6.0
+409 silly decomposeActions build pg-types@1.6.0
+410 silly decomposeActions install pg-types@1.6.0
+411 silly decomposeActions postinstall pg-types@1.6.0
+412 silly decomposeActions test pg-types@1.6.0
+413 silly decomposeActions finalize pg-types@1.6.0
+414 silly decomposeActions fetch string_decoder@0.10.31
+415 silly decomposeActions extract string_decoder@0.10.31
+416 silly decomposeActions preinstall string_decoder@0.10.31
+417 silly decomposeActions build string_decoder@0.10.31
+418 silly decomposeActions install string_decoder@0.10.31
+419 silly decomposeActions postinstall string_decoder@0.10.31
+420 silly decomposeActions test string_decoder@0.10.31
+421 silly decomposeActions finalize string_decoder@0.10.31
+422 silly decomposeActions fetch readable-stream@1.0.31
+423 silly decomposeActions extract readable-stream@1.0.31
+424 silly decomposeActions preinstall readable-stream@1.0.31
+425 silly decomposeActions build readable-stream@1.0.31
+426 silly decomposeActions install readable-stream@1.0.31
+427 silly decomposeActions postinstall readable-stream@1.0.31
+428 silly decomposeActions test readable-stream@1.0.31
+429 silly decomposeActions finalize readable-stream@1.0.31
+430 silly decomposeActions fetch pg-native@1.10.0
+431 silly decomposeActions extract pg-native@1.10.0
+432 silly decomposeActions preinstall pg-native@1.10.0
+433 silly decomposeActions build pg-native@1.10.0
+434 silly decomposeActions install pg-native@1.10.0
+435 silly decomposeActions postinstall pg-native@1.10.0
+436 silly decomposeActions test pg-native@1.10.0
+437 silly decomposeActions finalize pg-native@1.10.0
+438 silly executeActions Starting
+439 silly install executeActions
+440 silly doSerial global-install 0
+441 silly doParallel fetch 8
+442 verbose lock using C:\Users\ruben\AppData\Roaming\npm-cache\_locks\staging-4f14777719d3da84.lock for C:\Users\ruben\abyteabminute\node_modules\.staging
+443 silly doParallel extract 8
+444 silly extract bindings
+445 silly extract core-util-is
+446 silly extract nan
+447 silly extract libpq
+448 silly extract pg-types
+449 silly extract string_decoder
+450 silly extract readable-stream
+451 silly extract pg-native
+452 verbose unbuild node_modules\.staging\core-util-is-0a3a149e8181d05d5185599cabde9415
+453 verbose unbuild node_modules\.staging\bindings-ce0302970d695fd013a2e4af47c16731
+454 verbose unbuild node_modules\.staging\nan-0ec551ae84a81e2b4ac726b9c1f664a4
+455 verbose unbuild node_modules\.staging\pg-types-6597fed66caca97548ec513d34908c09
+456 verbose unbuild node_modules\.staging\string_decoder-42107c05e6d9e036197985bf7b43a6a2
+457 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\core-util-is-0a3a149e8181d05d5185599cabde9415 is being purged from base C:\Users\ruben\abyteabminute
+458 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\bindings-ce0302970d695fd013a2e4af47c16731 is being purged from base C:\Users\ruben\abyteabminute
+459 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\nan-0ec551ae84a81e2b4ac726b9c1f664a4 is being purged from base C:\Users\ruben\abyteabminute
+460 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\pg-types-6597fed66caca97548ec513d34908c09 is being purged from base C:\Users\ruben\abyteabminute
+461 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\string_decoder-42107c05e6d9e036197985bf7b43a6a2 is being purged from base C:\Users\ruben\abyteabminute
+462 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\core-util-is-0a3a149e8181d05d5185599cabde9415
+463 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\bindings-ce0302970d695fd013a2e4af47c16731
+464 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\nan-0ec551ae84a81e2b4ac726b9c1f664a4
+465 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\pg-types-6597fed66caca97548ec513d34908c09
+466 verbose unbuild node_modules\.staging\readable-stream-17fadfa30cc2a9f9da65f3e120e94a27
+467 verbose unbuild node_modules\.staging\libpq-08777a59e09aeac5714c7a8d3566ebc0
+468 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\string_decoder-42107c05e6d9e036197985bf7b43a6a2
+469 verbose unbuild node_modules\.staging\pg-native-8e182f347c8adf505edafc088aff131b
+470 verbose tar unpack C:\Users\ruben\AppData\Roaming\npm-cache\core-util-is\1.0.2\package.tgz
+471 verbose tar unpacking to C:\Users\ruben\abyteabminute\node_modules\.staging\core-util-is-0a3a149e8181d05d5185599cabde9415
+472 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\core-util-is-0a3a149e8181d05d5185599cabde9415 is being purged
+473 verbose tar unpack C:\Users\ruben\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+474 verbose tar unpacking to C:\Users\ruben\abyteabminute\node_modules\.staging\bindings-ce0302970d695fd013a2e4af47c16731
+475 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\bindings-ce0302970d695fd013a2e4af47c16731 is being purged
+476 verbose tar unpack C:\Users\ruben\AppData\Roaming\npm-cache\nan\2.4.0\package.tgz
+477 verbose tar unpacking to C:\Users\ruben\abyteabminute\node_modules\.staging\nan-0ec551ae84a81e2b4ac726b9c1f664a4
+478 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\nan-0ec551ae84a81e2b4ac726b9c1f664a4 is being purged
+479 verbose tar unpack C:\Users\ruben\AppData\Roaming\npm-cache\pg-types\1.6.0\package.tgz
+480 verbose tar unpacking to C:\Users\ruben\abyteabminute\node_modules\.staging\pg-types-6597fed66caca97548ec513d34908c09
+481 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\pg-types-6597fed66caca97548ec513d34908c09 is being purged
+482 verbose tar unpack C:\Users\ruben\AppData\Roaming\npm-cache\string_decoder\0.10.31\package.tgz
+483 verbose tar unpacking to C:\Users\ruben\abyteabminute\node_modules\.staging\string_decoder-42107c05e6d9e036197985bf7b43a6a2
+484 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\string_decoder-42107c05e6d9e036197985bf7b43a6a2 is being purged
+485 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\core-util-is-0a3a149e8181d05d5185599cabde9415
+486 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\bindings-ce0302970d695fd013a2e4af47c16731
+487 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\nan-0ec551ae84a81e2b4ac726b9c1f664a4
+488 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\pg-types-6597fed66caca97548ec513d34908c09
+489 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\readable-stream-17fadfa30cc2a9f9da65f3e120e94a27 is being purged from base C:\Users\ruben\abyteabminute
+490 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\libpq-08777a59e09aeac5714c7a8d3566ebc0 is being purged from base C:\Users\ruben\abyteabminute
+491 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\string_decoder-42107c05e6d9e036197985bf7b43a6a2
+492 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\pg-native-8e182f347c8adf505edafc088aff131b is being purged from base C:\Users\ruben\abyteabminute
+493 silly gunzTarPerm modes [ '777', '666' ]
+494 silly gunzTarPerm modes [ '777', '666' ]
+495 silly gunzTarPerm modes [ '777', '666' ]
+496 silly gunzTarPerm modes [ '777', '666' ]
+497 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\readable-stream-17fadfa30cc2a9f9da65f3e120e94a27
+498 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\libpq-08777a59e09aeac5714c7a8d3566ebc0
+499 silly gunzTarPerm modes [ '777', '666' ]
+500 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\pg-native-8e182f347c8adf505edafc088aff131b
+501 verbose tar unpack C:\Users\ruben\AppData\Roaming\npm-cache\readable-stream\1.0.31\package.tgz
+502 verbose tar unpacking to C:\Users\ruben\abyteabminute\node_modules\.staging\readable-stream-17fadfa30cc2a9f9da65f3e120e94a27
+503 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\readable-stream-17fadfa30cc2a9f9da65f3e120e94a27 is being purged
+504 verbose tar unpack C:\Users\ruben\AppData\Roaming\npm-cache\libpq\1.8.5\package.tgz
+505 verbose tar unpacking to C:\Users\ruben\abyteabminute\node_modules\.staging\libpq-08777a59e09aeac5714c7a8d3566ebc0
+506 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\libpq-08777a59e09aeac5714c7a8d3566ebc0 is being purged
+507 verbose tar unpack C:\Users\ruben\AppData\Roaming\npm-cache\pg-native\1.10.0\package.tgz
+508 verbose tar unpacking to C:\Users\ruben\abyteabminute\node_modules\.staging\pg-native-8e182f347c8adf505edafc088aff131b
+509 silly gentlyRm C:\Users\ruben\abyteabminute\node_modules\.staging\pg-native-8e182f347c8adf505edafc088aff131b is being purged
+510 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\readable-stream-17fadfa30cc2a9f9da65f3e120e94a27
+511 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\libpq-08777a59e09aeac5714c7a8d3566ebc0
+512 verbose gentlyRm don't care about contents; nuking C:\Users\ruben\abyteabminute\node_modules\.staging\pg-native-8e182f347c8adf505edafc088aff131b
+513 silly gunzTarPerm modes [ '777', '666' ]
+514 silly gunzTarPerm modes [ '777', '666' ]
+515 silly gunzTarPerm modes [ '777', '666' ]
+516 silly gunzTarPerm extractEntry package.json
+517 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+518 silly gunzTarPerm extractEntry package.json
+519 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+520 silly gunzTarPerm extractEntry package.json
+521 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+522 silly gunzTarPerm extractEntry package.json
+523 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+524 silly gunzTarPerm extractEntry package.json
+525 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+526 silly gunzTarPerm extractEntry package.json
+527 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+528 silly gunzTarPerm extractEntry package.json
+529 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+530 silly gunzTarPerm extractEntry package.json
+531 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+532 silly gunzTarPerm extractEntry README.md
+533 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+534 silly gunzTarPerm extractEntry LICENSE
+535 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+536 silly gunzTarPerm extractEntry README.md
+537 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+538 silly gunzTarPerm extractEntry bindings.js
+539 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+540 silly gunzTarPerm extractEntry README.md
+541 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+542 silly gunzTarPerm extractEntry .npmignore
+543 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+544 silly gunzTarPerm extractEntry README.md
+545 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+546 silly gunzTarPerm extractEntry include_dirs.js
+547 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+548 silly gunzTarPerm extractEntry .npmignore
+549 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+550 silly gunzTarPerm extractEntry README.md
+551 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+552 silly gunzTarPerm extractEntry .npmignore
+553 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+554 silly gunzTarPerm extractEntry README.md
+555 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+556 silly gunzTarPerm extractEntry .npmignore
+557 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+558 silly gunzTarPerm extractEntry README.md
+559 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+560 silly gunzTarPerm extractEntry .npmignore
+561 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+562 silly gunzTarPerm extractEntry README.md
+563 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+564 silly gunzTarPerm extractEntry index.js
+565 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+566 silly gunzTarPerm extractEntry .travis.yml
+567 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+568 silly gunzTarPerm extractEntry LICENSE
+569 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+570 silly gunzTarPerm extractEntry index.js
+571 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+572 silly gunzTarPerm extractEntry test.js
+573 silly gunzTarPerm modified mode [ 'test.js', 420, 438 ]
+574 silly gunzTarPerm extractEntry float.patch
+575 silly gunzTarPerm modified mode [ 'float.patch', 420, 438 ]
+576 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+577 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+578 silly gunzTarPerm extractEntry CHANGELOG.md
+579 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+580 silly gunzTarPerm extractEntry LICENSE.md
+581 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+582 silly gunzTarPerm extractEntry doc/node_misc.md
+583 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+584 silly gunzTarPerm extractEntry index.js
+585 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+586 silly gunzTarPerm extractEntry LICENSE
+587 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+588 silly gunzTarPerm extractEntry transform.js
+589 silly gunzTarPerm modified mode [ 'transform.js', 420, 438 ]
+590 silly gunzTarPerm extractEntry index.js
+591 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+592 silly gunzTarPerm extractEntry bench/index.js
+593 silly gunzTarPerm modified mode [ 'bench/index.js', 420, 438 ]
+594 silly gunzTarPerm extractEntry bench/leaks.js
+595 silly gunzTarPerm modified mode [ 'bench/leaks.js', 420, 438 ]
+596 silly gunzTarPerm extractEntry .travis.yml
+597 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+598 silly gunzTarPerm extractEntry Makefile
+599 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+600 silly gunzTarPerm extractEntry lib/copy-stream.js
+601 silly gunzTarPerm modified mode [ 'lib/copy-stream.js', 420, 438 ]
+602 silly gunzTarPerm extractEntry test/array-mode.js
+603 silly gunzTarPerm modified mode [ 'test/array-mode.js', 420, 438 ]
+604 silly gunzTarPerm extractEntry test/custom-types.js
+605 silly gunzTarPerm modified mode [ 'test/custom-types.js', 420, 438 ]
+606 silly gunzTarPerm extractEntry test/domains.js
+607 silly gunzTarPerm modified mode [ 'test/domains.js', 420, 438 ]
+608 silly gunzTarPerm extractEntry test/huge-query.js
+609 silly gunzTarPerm modified mode [ 'test/huge-query.js', 420, 438 ]
+610 silly gunzTarPerm extractEntry test/copy-to.js
+611 silly gunzTarPerm modified mode [ 'test/copy-to.js', 420, 438 ]
+612 silly gunzTarPerm extractEntry test/async-workflow.js
+613 silly gunzTarPerm modified mode [ 'test/async-workflow.js', 420, 438 ]
+614 silly gunzTarPerm extractEntry test/many-connections.js
+615 silly gunzTarPerm modified mode [ 'test/many-connections.js', 420, 438 ]
+616 silly gunzTarPerm extractEntry test/many-errors.js
+617 silly gunzTarPerm modified mode [ 'test/many-errors.js', 420, 438 ]
+618 silly gunzTarPerm extractEntry test/query-sync.js
+619 silly gunzTarPerm modified mode [ 'test/query-sync.js', 420, 438 ]
+620 silly gunzTarPerm extractEntry test/multiple-queries.js
+621 silly gunzTarPerm modified mode [ 'test/multiple-queries.js', 420, 438 ]
+622 silly gunzTarPerm extractEntry test/copy-from.js
+623 silly gunzTarPerm modified mode [ 'test/copy-from.js', 420, 438 ]
+624 silly gunzTarPerm extractEntry test/notify.js
+625 silly gunzTarPerm modified mode [ 'test/notify.js', 420, 438 ]
+626 silly gunzTarPerm extractEntry test/connection.js
+627 silly gunzTarPerm modified mode [ 'test/connection.js', 420, 438 ]
+628 silly gunzTarPerm extractEntry test/prepare.js
+629 silly gunzTarPerm modified mode [ 'test/prepare.js', 420, 438 ]
+630 silly gunzTarPerm extractEntry test/cancel.js
+631 silly gunzTarPerm modified mode [ 'test/cancel.js', 420, 438 ]
+632 silly gunzTarPerm extractEntry test/query-async.js
+633 silly gunzTarPerm modified mode [ 'test/query-async.js', 420, 438 ]
+634 silly gunzTarPerm extractEntry test/index.js
+635 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+636 silly gunzTarPerm extractEntry test/version.js
+637 silly gunzTarPerm modified mode [ 'test/version.js', 420, 438 ]
+638 silly gunzTarPerm extractEntry test/load.js
+639 silly gunzTarPerm modified mode [ 'test/load.js', 420, 438 ]
+640 silly gunzTarPerm extractEntry test/mocha.opts
+641 silly gunzTarPerm modified mode [ 'test/mocha.opts', 420, 438 ]
+642 silly gunzTarPerm extractEntry lib/util.js
+643 silly gunzTarPerm modified mode [ 'lib/util.js', 420, 438 ]
+644 silly gunzTarPerm extractEntry Makefile
+645 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+646 silly gunzTarPerm extractEntry lib/arrayParser.js
+647 silly gunzTarPerm modified mode [ 'lib/arrayParser.js', 420, 438 ]
+648 silly gunzTarPerm extractEntry binding.gyp
+649 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+650 silly gunzTarPerm extractEntry .travis.yml
+651 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+652 silly gunzTarPerm extractEntry Makefile
+653 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+654 silly gunzTarPerm extractEntry duplex.js
+655 silly gunzTarPerm modified mode [ 'duplex.js', 420, 438 ]
+656 silly gunzTarPerm extractEntry readable.js
+657 silly gunzTarPerm modified mode [ 'readable.js', 436, 438 ]
+658 silly gunzTarPerm extractEntry doc/asyncworker.md
+659 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+660 silly gunzTarPerm extractEntry doc/callback.md
+661 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+662 silly gunzTarPerm extractEntry src/addon.cc
+663 silly gunzTarPerm modified mode [ 'src/addon.cc', 420, 438 ]
+664 silly gunzTarPerm extractEntry lib/binaryParsers.js
+665 silly gunzTarPerm modified mode [ 'lib/binaryParsers.js', 420, 438 ]
+666 silly gunzTarPerm extractEntry lib/textParsers.js
+667 silly gunzTarPerm modified mode [ 'lib/textParsers.js', 420, 438 ]
+668 silly gunzTarPerm extractEntry test/array.js
+669 silly gunzTarPerm modified mode [ 'test/array.js', 420, 438 ]
+670 silly gunzTarPerm extractEntry test/assert.js
+671 silly gunzTarPerm modified mode [ 'test/assert.js', 420, 438 ]
+672 silly gunzTarPerm extractEntry test/dates.js
+673 silly gunzTarPerm modified mode [ 'test/dates.js', 420, 438 ]
+674 silly gunzTarPerm extractEntry test/index.js
+675 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+676 silly gunzTarPerm extractEntry doc/converters.md
+677 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+678 silly gunzTarPerm extractEntry doc/errors.md
+679 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+680 silly gunzTarPerm extractEntry passthrough.js
+681 silly gunzTarPerm modified mode [ 'passthrough.js', 420, 438 ]
+682 silly gunzTarPerm extractEntry writable.js
+683 silly gunzTarPerm modified mode [ 'writable.js', 420, 438 ]
+684 silly gunzTarPerm extractEntry src/addon.h
+685 silly gunzTarPerm modified mode [ 'src/addon.h', 420, 438 ]
+686 silly gunzTarPerm extractEntry src/connect-async-worker.cc
+687 silly gunzTarPerm modified mode [ 'src/connect-async-worker.cc', 420, 438 ]
+688 silly gunzTarPerm extractEntry doc/maybe_types.md
+689 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+690 silly gunzTarPerm extractEntry doc/methods.md
+691 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+692 silly gunzTarPerm extractEntry lib/_stream_duplex.js
+693 silly gunzTarPerm modified mode [ 'lib/_stream_duplex.js', 436, 438 ]
+694 silly gunzTarPerm extractEntry lib/_stream_passthrough.js
+695 silly gunzTarPerm modified mode [ 'lib/_stream_passthrough.js', 436, 438 ]
+696 silly gunzTarPerm extractEntry src/connect-async-worker.h
+697 silly gunzTarPerm modified mode [ 'src/connect-async-worker.h', 420, 438 ]
+698 silly gunzTarPerm extractEntry src/connection.cc
+699 silly gunzTarPerm modified mode [ 'src/connection.cc', 420, 438 ]
+700 silly gunzTarPerm extractEntry lib/_stream_readable.js
+701 silly gunzTarPerm modified mode [ 'lib/_stream_readable.js', 436, 438 ]
+702 silly gunzTarPerm extractEntry doc/new.md
+703 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+704 silly gunzTarPerm extractEntry doc/buffers.md
+705 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+706 silly gunzTarPerm extractEntry src/connection.h
+707 silly gunzTarPerm modified mode [ 'src/connection.h', 420, 438 ]
+708 silly gunzTarPerm extractEntry test/async-connection.js
+709 silly gunzTarPerm modified mode [ 'test/async-connection.js', 420, 438 ]
+710 silly gunzTarPerm extractEntry lib/_stream_transform.js
+711 silly gunzTarPerm modified mode [ 'lib/_stream_transform.js', 436, 438 ]
+712 silly gunzTarPerm extractEntry lib/_stream_writable.js
+713 silly gunzTarPerm modified mode [ 'lib/_stream_writable.js', 436, 438 ]
+714 silly gunzTarPerm extractEntry test/escaping.js
+715 silly gunzTarPerm modified mode [ 'test/escaping.js', 420, 438 ]
+716 silly gunzTarPerm extractEntry test/helper.js
+717 silly gunzTarPerm modified mode [ 'test/helper.js', 420, 438 ]
+718 silly gunzTarPerm extractEntry doc/object_wrappers.md
+719 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 438 ]
+720 silly gunzTarPerm extractEntry doc/persistent.md
+721 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+722 silly gunzTarPerm extractEntry test/index.js
+723 silly gunzTarPerm modified mode [ 'test/index.js', 420, 438 ]
+724 silly gunzTarPerm extractEntry test/error-info.js
+725 silly gunzTarPerm modified mode [ 'test/error-info.js', 420, 438 ]
+726 silly gunzTarPerm extractEntry doc/scopes.md
+727 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+728 silly gunzTarPerm extractEntry test/async-socket.js
+729 silly gunzTarPerm modified mode [ 'test/async-socket.js', 420, 438 ]
+730 silly gunzTarPerm extractEntry test/sync-prepare.js
+731 silly gunzTarPerm modified mode [ 'test/sync-prepare.js', 420, 438 ]
+732 silly gunzTarPerm extractEntry doc/script.md
+733 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+734 silly gunzTarPerm extractEntry doc/string_bytes.md
+735 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+736 silly gunzTarPerm extractEntry test/multiple-queries.js
+737 silly gunzTarPerm modified mode [ 'test/multiple-queries.js', 420, 438 ]
+738 silly gunzTarPerm extractEntry test/non-blocking-controls.js
+739 silly gunzTarPerm modified mode [ 'test/non-blocking-controls.js', 420, 438 ]
+740 silly gunzTarPerm extractEntry doc/v8_internals.md
+741 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+742 silly gunzTarPerm extractEntry doc/v8_misc.md
+743 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+744 silly gunzTarPerm extractEntry test/notification.js
+745 silly gunzTarPerm modified mode [ 'test/notification.js', 420, 438 ]
+746 silly gunzTarPerm extractEntry test/error-conditions.js
+747 silly gunzTarPerm modified mode [ 'test/error-conditions.js', 420, 438 ]
+748 silly gunzTarPerm extractEntry nan.h
+749 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+750 silly gunzTarPerm extractEntry nan_callbacks.h
+751 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+752 silly gunzTarPerm extractEntry test/result-accessors.js
+753 silly gunzTarPerm modified mode [ 'test/result-accessors.js', 420, 438 ]
+754 silly gunzTarPerm extractEntry test/copy-out.js
+755 silly gunzTarPerm modified mode [ 'test/copy-out.js', 420, 438 ]
+756 silly gunzTarPerm extractEntry test/server-version.js
+757 silly gunzTarPerm modified mode [ 'test/server-version.js', 420, 438 ]
+758 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+759 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+760 silly gunzTarPerm extractEntry nan_converters.h
+761 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+762 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+763 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+764 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+765 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+766 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+767 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+768 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+769 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+770 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+771 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+772 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+773 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+774 silly gunzTarPerm extractEntry test/copy-in.js
+775 silly gunzTarPerm modified mode [ 'test/copy-in.js', 420, 438 ]
+776 silly gunzTarPerm extractEntry nan_new.h
+777 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+778 silly gunzTarPerm extractEntry nan_object_wrap.h
+779 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+780 silly gunzTarPerm extractEntry test/socket.js
+781 silly gunzTarPerm modified mode [ 'test/socket.js', 420, 438 ]
+782 silly gunzTarPerm extractEntry test/construction.js
+783 silly gunzTarPerm modified mode [ 'test/construction.js', 420, 438 ]
+784 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+785 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+786 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+787 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+788 silly gunzTarPerm extractEntry test/sync-integration.js
+789 silly gunzTarPerm modified mode [ 'test/sync-integration.js', 420, 438 ]
+790 silly gunzTarPerm extractEntry test/cancel.js
+791 silly gunzTarPerm modified mode [ 'test/cancel.js', 420, 438 ]
+792 silly gunzTarPerm extractEntry nan_string_bytes.h
+793 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+794 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+795 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+796 silly gunzTarPerm extractEntry test/sync-parameters.js
+797 silly gunzTarPerm modified mode [ 'test/sync-parameters.js', 420, 438 ]
+798 silly gunzTarPerm extractEntry test/load.js
+799 silly gunzTarPerm modified mode [ 'test/load.js', 420, 438 ]
+800 silly gunzTarPerm extractEntry nan_weak.h
+801 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+802 silly gunzTarPerm extractEntry tools/package.json
+803 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+804 silly gunzTarPerm extractEntry test/sync.js
+805 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+806 silly gunzTarPerm extractEntry test/many-connections.js
+807 silly gunzTarPerm modified mode [ 'test/many-connections.js', 420, 438 ]
+808 silly gunzTarPerm extractEntry tools/README.md
+809 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+810 silly gunzTarPerm extractEntry tools/1to2.js
+811 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+812 silly gunzTarPerm extractEntry test/mocha.opts
+813 silly gunzTarPerm modified mode [ 'test/mocha.opts', 420, 438 ]
+814 silly doParallel preinstall 8
+815 silly preinstall bindings C:\Users\ruben\abyteabminute\node_modules\.staging\bindings-ce0302970d695fd013a2e4af47c16731
+816 info lifecycle bindings@1.2.1~preinstall: bindings@1.2.1
+817 silly preinstall core-util-is C:\Users\ruben\abyteabminute\node_modules\.staging\core-util-is-0a3a149e8181d05d5185599cabde9415
+818 info lifecycle core-util-is@1.0.2~preinstall: core-util-is@1.0.2
+819 silly preinstall nan C:\Users\ruben\abyteabminute\node_modules\.staging\nan-0ec551ae84a81e2b4ac726b9c1f664a4
+820 info lifecycle nan@2.4.0~preinstall: nan@2.4.0
+821 silly preinstall libpq C:\Users\ruben\abyteabminute\node_modules\.staging\libpq-08777a59e09aeac5714c7a8d3566ebc0
+822 info lifecycle libpq@1.8.5~preinstall: libpq@1.8.5
+823 silly preinstall pg-types C:\Users\ruben\abyteabminute\node_modules\.staging\pg-types-6597fed66caca97548ec513d34908c09
+824 info lifecycle pg-types@1.6.0~preinstall: pg-types@1.6.0
+825 silly preinstall string_decoder C:\Users\ruben\abyteabminute\node_modules\.staging\string_decoder-42107c05e6d9e036197985bf7b43a6a2
+826 info lifecycle string_decoder@0.10.31~preinstall: string_decoder@0.10.31
+827 silly preinstall readable-stream C:\Users\ruben\abyteabminute\node_modules\.staging\readable-stream-17fadfa30cc2a9f9da65f3e120e94a27
+828 info lifecycle readable-stream@1.0.31~preinstall: readable-stream@1.0.31
+829 silly preinstall pg-native C:\Users\ruben\abyteabminute\node_modules\.staging\pg-native-8e182f347c8adf505edafc088aff131b
+830 info lifecycle pg-native@1.10.0~preinstall: pg-native@1.10.0
+831 silly lifecycle bindings@1.2.1~preinstall: no script for preinstall, continuing
+832 silly lifecycle core-util-is@1.0.2~preinstall: no script for preinstall, continuing
+833 silly lifecycle nan@2.4.0~preinstall: no script for preinstall, continuing
+834 silly lifecycle libpq@1.8.5~preinstall: no script for preinstall, continuing
+835 silly lifecycle pg-types@1.6.0~preinstall: no script for preinstall, continuing
+836 silly lifecycle string_decoder@0.10.31~preinstall: no script for preinstall, continuing
+837 silly lifecycle readable-stream@1.0.31~preinstall: no script for preinstall, continuing
+838 silly lifecycle pg-native@1.10.0~preinstall: no script for preinstall, continuing
+839 silly doReverseSerial remove 0
+840 silly doSerial move 0
+841 silly doSerial finalize 8
+842 silly finalize C:\Users\ruben\abyteabminute\node_modules\bindings
+843 silly finalize C:\Users\ruben\abyteabminute\node_modules\core-util-is
+844 silly finalize C:\Users\ruben\abyteabminute\node_modules\nan
+845 silly finalize C:\Users\ruben\abyteabminute\node_modules\libpq
+846 silly finalize C:\Users\ruben\abyteabminute\node_modules\pg-native\node_modules\pg-types
+847 silly finalize C:\Users\ruben\abyteabminute\node_modules\string_decoder
+848 silly finalize C:\Users\ruben\abyteabminute\node_modules\readable-stream
+849 silly finalize C:\Users\ruben\abyteabminute\node_modules\pg-native
+850 silly doSerial build 8
+851 silly build bindings
+852 info linkStuff bindings@1.2.1
+853 silly linkStuff bindings@1.2.1 has C:\Users\ruben\abyteabminute\node_modules as its parent node_modules
+854 verbose linkBins bindings@1.2.1
+855 verbose linkMans bindings@1.2.1
+856 verbose rebuildBundles bindings@1.2.1
+857 silly build core-util-is
+858 info linkStuff core-util-is@1.0.2
+859 silly linkStuff core-util-is@1.0.2 has C:\Users\ruben\abyteabminute\node_modules as its parent node_modules
+860 verbose linkBins core-util-is@1.0.2
+861 verbose linkMans core-util-is@1.0.2
+862 verbose rebuildBundles core-util-is@1.0.2
+863 silly build nan
+864 info linkStuff nan@2.4.0
+865 silly linkStuff nan@2.4.0 has C:\Users\ruben\abyteabminute\node_modules as its parent node_modules
+866 verbose linkBins nan@2.4.0
+867 verbose linkMans nan@2.4.0
+868 verbose rebuildBundles nan@2.4.0
+869 silly build libpq
+870 info linkStuff libpq@1.8.5
+871 silly linkStuff libpq@1.8.5 has C:\Users\ruben\abyteabminute\node_modules as its parent node_modules
+872 verbose linkBins libpq@1.8.5
+873 verbose linkMans libpq@1.8.5
+874 verbose rebuildBundles libpq@1.8.5
+875 silly build pg-types
+876 info linkStuff pg-types@1.6.0
+877 silly linkStuff pg-types@1.6.0 has C:\Users\ruben\abyteabminute\node_modules\pg-native\node_modules as its parent node_modules
+878 verbose linkBins pg-types@1.6.0
+879 verbose linkMans pg-types@1.6.0
+880 verbose rebuildBundles pg-types@1.6.0
+881 silly build string_decoder
+882 info linkStuff string_decoder@0.10.31
+883 silly linkStuff string_decoder@0.10.31 has C:\Users\ruben\abyteabminute\node_modules as its parent node_modules
+884 verbose linkBins string_decoder@0.10.31
+885 verbose linkMans string_decoder@0.10.31
+886 verbose rebuildBundles string_decoder@0.10.31
+887 silly build readable-stream
+888 info linkStuff readable-stream@1.0.31
+889 silly linkStuff readable-stream@1.0.31 has C:\Users\ruben\abyteabminute\node_modules as its parent node_modules
+890 verbose linkBins readable-stream@1.0.31
+891 verbose linkMans readable-stream@1.0.31
+892 verbose rebuildBundles readable-stream@1.0.31
+893 silly build pg-native
+894 info linkStuff pg-native@1.10.0
+895 silly linkStuff pg-native@1.10.0 has C:\Users\ruben\abyteabminute\node_modules as its parent node_modules
+896 verbose linkBins pg-native@1.10.0
+897 verbose linkMans pg-native@1.10.0
+898 verbose rebuildBundles pg-native@1.10.0
+899 verbose rebuildBundles [ 'pg-types' ]
+900 silly doSerial global-link 0
+901 silly doParallel update-linked 0
+902 silly doSerial install 8
+903 silly install bindings C:\Users\ruben\abyteabminute\node_modules\.staging\bindings-ce0302970d695fd013a2e4af47c16731
+904 info lifecycle bindings@1.2.1~install: bindings@1.2.1
+905 silly lifecycle bindings@1.2.1~install: no script for install, continuing
+906 silly install core-util-is C:\Users\ruben\abyteabminute\node_modules\.staging\core-util-is-0a3a149e8181d05d5185599cabde9415
+907 info lifecycle core-util-is@1.0.2~install: core-util-is@1.0.2
+908 silly lifecycle core-util-is@1.0.2~install: no script for install, continuing
+909 silly install nan C:\Users\ruben\abyteabminute\node_modules\.staging\nan-0ec551ae84a81e2b4ac726b9c1f664a4
+910 info lifecycle nan@2.4.0~install: nan@2.4.0
+911 silly lifecycle nan@2.4.0~install: no script for install, continuing
+912 silly install libpq C:\Users\ruben\abyteabminute\node_modules\.staging\libpq-08777a59e09aeac5714c7a8d3566ebc0
+913 info lifecycle libpq@1.8.5~install: libpq@1.8.5
+914 verbose lifecycle libpq@1.8.5~install: unsafe-perm in lifecycle true
+915 verbose lifecycle libpq@1.8.5~install: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\ruben\abyteabminute\node_modules\libpq\node_modules\.bin;C:\Users\ruben\abyteabminute\node_modules\.bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\NVIDIA Corporation\DDS Utilities;C:\Users\ruben\curl-7.40.0;C:\school\wamp2\bin\php\php5.5.12;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\Users\ruben\AppData\Roaming\npm;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Git\cmd;c:\program files (x86)\iracing;c:\program files (x86)\iracing;C:\Android;C:\Windows\System32;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\NVIDIA Corporation\DDS Utilities;C:\Users\ruben\curl-7.40.0;C:;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\ruben\AppData\Roaming\npm;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+916 verbose lifecycle libpq@1.8.5~install: CWD: C:\Users\ruben\abyteabminute\node_modules\libpq
+917 silly lifecycle libpq@1.8.5~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
+918 silly lifecycle libpq@1.8.5~install: Returned: code: 1  signal: null
+919 info lifecycle libpq@1.8.5~install: Failed to exec install script
+920 verbose unlock done using C:\Users\ruben\AppData\Roaming\npm-cache\_locks\staging-4f14777719d3da84.lock for C:\Users\ruben\abyteabminute\node_modules\.staging
+921 silly rollbackFailedOptional Starting
+922 silly rollbackFailedOptional Finishing
+923 silly runTopLevelLifecycles Starting
+924 silly runTopLevelLifecycles Finishing
+925 silly install printInstalled
+926 verbose stack Error: libpq@1.8.5 install: `node-gyp rebuild`
+926 verbose stack Exit status 1
+926 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:233:16)
+926 verbose stack     at emitTwo (events.js:87:13)
+926 verbose stack     at EventEmitter.emit (events.js:172:7)
+926 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+926 verbose stack     at emitTwo (events.js:87:13)
+926 verbose stack     at ChildProcess.emit (events.js:172:7)
+926 verbose stack     at maybeClose (internal/child_process.js:818:16)
+926 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+927 verbose pkgid libpq@1.8.5
+928 verbose cwd C:\Users\ruben\abyteabminute
+929 error Windows_NT 10.0.14393
+930 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "pg-native" "--save"
+931 error node v5.0.0
+932 error npm  v3.3.6
+933 error code ELIFECYCLE
+934 error libpq@1.8.5 install: `node-gyp rebuild`
+934 error Exit status 1
+935 error Failed at the libpq@1.8.5 install script 'node-gyp rebuild'.
+935 error This is most likely a problem with the libpq package,
+935 error not with npm itself.
+935 error Tell the author that this fails on your system:
+935 error     node-gyp rebuild
+935 error You can get their info via:
+935 error     npm owner ls libpq
+935 error There is likely additional logging output above.
+936 verbose exit [ 1, true ]
