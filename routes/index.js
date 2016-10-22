@@ -8,7 +8,7 @@ var io           = socket_io();
 /* GET home page. */
 router.get('/new/:filename', function(req, res, next) {
     glitch.newGlitch(req.params.filename,function(err,callback){
-       if(err){res.render('error');}
+       if(err){res.render('error',{message:'fuck something went wrong',error: err});}
         else  res.render('index', { output: 'xd.jpg' });
     });
 
