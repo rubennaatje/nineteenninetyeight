@@ -108,7 +108,7 @@ setInterval(function() {
   });
   imageCounter++;
   if(imageCounter > 14){
-    imageCounter = 1;
+    imageCounter = 1; 
   }
 }, the_interval3);
 
