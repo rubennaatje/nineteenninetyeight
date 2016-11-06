@@ -25,8 +25,8 @@ var pg = require('pg');
 // instantiate a new client
 // the client will read connection information from
 // the same environment variables used by postgres cli tools
-var client = new pg.Client(process.env.DATABASE_URL);
-client.connect(function (err, client, done) {
+var pool = new pg.Pool(process.env.DATABASE_URL);
+pool.connect(function (err, client, done) {
     if (err) {
         console.log('error fetching client from pool', err);
 
@@ -42,7 +42,7 @@ client.connect(function (err, client, done) {
                 client.query('CREATE TABLE IF NOT EXISTS Image(id SERIAL PRIMARY KEY,fileName VARCHAR(140), text VARCHAR(40) not null,times int,completed boolean)',
                     function (err, result) {
                         //call `done()` to release the client back to the pool
- 
+
 
                         if (err) {
                             return console.error('error running query', err);
@@ -57,7 +57,7 @@ client.connect(function (err, client, done) {
 // to run a query we can acquire a client from the pool,
 // run a query on the client, and then return the client to the pool
 var connection = function (callback) {
-    client.connect(function (err, client, done) {
+    pool.connect(function (err, client, done) {
         if (err) {
             console.log('error fetching client from pool', err);
             return callback(err, null);
