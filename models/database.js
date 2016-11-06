@@ -1,25 +1,25 @@
 /*var pg = require('pg');
 
-// create a config to configure both pooling behavior 
-// and client options 
-// note: all config is optional and the environment variables 
-// will be read if the config is not present 
-var config = {
-    URL: process.env.DATABASE_URL,
-    host:process.env.host,
-    user: process.env.user, //env var: PGUSER
-    database: process.env.database, //env var: PGDATABASE
-    password: process.env.password, //env var: PGPASSWORD
-    port: 5432, //env var: PGPORT
-    max: 10, // max number of clients in the pool
-    idleTimeoutMillis: 30000 // how long a client is allowed to remain idle before being closed
-};
+ // create a config to configure both pooling behavior
+ // and client options
+ // note: all config is optional and the environment variables
+ // will be read if the config is not present
+ var config = {
+ URL: process.env.DATABASE_URL,
+ host:process.env.host,
+ user: process.env.user, //env var: PGUSER
+ database: process.env.database, //env var: PGDATABASE
+ password: process.env.password, //env var: PGPASSWORD
+ port: 5432, //env var: PGPORT
+ max: 10, // max number of clients in the pool
+ idleTimeoutMillis: 30000 // how long a client is allowed to remain idle before being closed
+ };
 
 
-//this initializes a connection pool
-//it will keep idle connections open for a 30 seconds
-//and set a limit of maximum 10 idle clients
-var pool = new pg.Pool(config);*/
+ //this initializes a connection pool
+ //it will keep idle connections open for a 30 seconds
+ //and set a limit of maximum 10 idle clients
+ var pool = new pg.Pool(config);*/
 var pg = require('pg');
 
 // instantiate a new client
@@ -34,11 +34,11 @@ client.connect(function (err, client, done) {
     else {
         client.query('CREATE TABLE IF NOT EXISTS Glitch(id SERIAL PRIMARY KEY,idImage INT, text VARCHAR(40) not null)',
             function (err, result) {
-            //call `done()` to release the client back to the pool
+                //call `done()` to release the client back to the pool
 
-            if (err) {
-                return console.error('error running query', err);
-            }
+                if (err) {
+                    return console.error('error running query', err);
+                }
                 client.query('CREATE TABLE IF NOT EXISTS Image(id SERIAL PRIMARY KEY,fileName VARCHAR(140), text VARCHAR(40) not null,times int,completed boolean)',
                     function (err, result) {
                         //call `done()` to release the client back to the pool
@@ -50,16 +50,16 @@ client.connect(function (err, client, done) {
                         console.log('success');
                         //output: 1
                     });
-            //output: 1
-        });
+                //output: 1
+            });
     }
 });
 // to run a query we can acquire a client from the pool,
 // run a query on the client, and then return the client to the pool
 var connection = function (callback) {
     client.connect(function (err, client, done) {
-         if (err) {
-             console.log('error fetching client from pool', err);
+        if (err) {
+            console.log('error fetching client from pool', err);
             return callback(err, null);
         }
         else{
