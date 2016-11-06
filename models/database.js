@@ -1,4 +1,4 @@
-/*var pg = require('pg');
+/*var pg = require('pg');2
 
  // create a config to configure both pooling behavior
  // and client options
