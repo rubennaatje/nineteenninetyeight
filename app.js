@@ -72,6 +72,7 @@ setInterval(function() {
 var minutes = 2, the_interval = minutes * 60 * 1000;
 
 setInterval(function() {
+  counter = 120;
   //console.log("I am doing my 10 minutes check");
   destroy.destroyByte(true,10,0.01,0.9,'xd.jpg', function (err, callback) {
     if (err) {
@@ -80,7 +81,7 @@ setInterval(function() {
       test(callback);
     }
   });
-  counter = 120;
+
 }, the_interval);
 
 var minutes2 = 20, the_interval2 = minutes2 * 60 * 1000;
@@ -108,7 +109,7 @@ setInterval(function() {
   });
   imageCounter++;
   if(imageCounter > 14){
-    imageCounter = 1; 
+    imageCounter = 1;
   }
 }, the_interval3);
 
