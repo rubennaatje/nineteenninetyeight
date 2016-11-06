@@ -21,8 +21,8 @@ block content
   script(src='javascripts/socket.js')
   script.
     var counter = 0;
-    //var socket = io.connect('https://cryptic-coast-13816.herokuapp.com/');
-    var socket = io.connect('http://localhost');
+    var socket = io.connect('https://nineteenninetyeight.herokuapp.com/');
+    //var socket = io.connect('http://localhost');
     socket.on('newGlitch', function (data) {
       console.log(data);
       document.getElementById("test").src = "/images/"+data.picture+"?" + new Date().getTime();
