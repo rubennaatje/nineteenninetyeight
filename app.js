@@ -65,14 +65,14 @@ app.use(function(err, req, res, next) {
   });
 });
 
-var counter =200;
+var counter =120;
 setInterval(function() {
   counter--;
 }, 1000);
-var minutes = 3, the_interval = minutes * 60 * 1000;
+var minutes = 2, the_interval = minutes * 60 * 1000;
 
 setInterval(function() {
-  console.log("I am doing my 10 minutes check");
+  //console.log("I am doing my 10 minutes check");
   destroy.destroyByte(true,10,0.01,0.9,'xd.jpg', function (err, callback) {
     if (err) {
       console.log(err);
@@ -80,10 +80,10 @@ setInterval(function() {
       test(callback);
     }
   });
-  counter = 200;
+  counter = 120;
 }, the_interval);
 
-var minutes2 = 120, the_interval2 = minutes2 * 60 * 1000;
+var minutes2 = 20, the_interval2 = minutes2 * 60 * 1000;
 //every 4 hours
 setInterval(function() {
   console.log("I am doing my 51 minutes check");
@@ -95,9 +95,25 @@ setInterval(function() {
     }
   });
 }, the_interval2);
+var imageCounter = 9;
+var minutes3 = 120, the_interval3 = minutes3 * 60 * 1000;
+//every 4 hours
+setInterval(function() {
+  console.log("I am doing my 521 minutes check");
+  destroy.newGlitch(imageCounter,function(err,callback){
+    if(err){
+      console.log('nice');
+    }
+
+  });
+  imageCounter++;
+  if(imageCounter > 14){
+    imageCounter = 1;
+  }
+}, the_interval3);
 
 var test = function (picture) {
-  console.log('sending');
+  //console.log('sending');
   io.emit('newGlitch', { picture: picture, processvar: process.env.test,counter:counter});
 };
 io.on('connection', function(socket){
