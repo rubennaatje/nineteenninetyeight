@@ -72,7 +72,7 @@ setInterval(function() {
 var minutes = 2, the_interval = minutes * 60 * 1000;
 
 setInterval(function() {
-  counter = 120;
+  counter = 100;
   //console.log("I am doing my 10 minutes check");
   destroy.destroyByte(true,10,0.01,0.9,'xd.jpg', function (err, callback) {
     if (err) {
@@ -82,7 +82,7 @@ setInterval(function() {
     }
   });
 
-}, the_interval);
+}, 100000);
 
 var minutes2 = 20, the_interval2 = minutes2 * 60 * 1000;
 //every 4 hours
@@ -96,7 +96,7 @@ setInterval(function() {
     }
   });
 }, the_interval2);
-var imageCounter = 9;
+var imageCounter = 10;
 var minutes3 = 120, the_interval3 = minutes3 * 60 * 1000;
 //every 4 hours
 setInterval(function() {
@@ -108,7 +108,7 @@ setInterval(function() {
 
   });
   imageCounter++;
-  if(imageCounter > 14){
+  if(imageCounter > 25){
     imageCounter = 1;
   }
 }, the_interval3);
