@@ -93,10 +93,8 @@ Glitch.destroyByte = function (opeenvolgend,aantalbytes,min,max,output, callback
         }
     }
 
-    var currentdate = new Date();
-    var datetime =  currentdate.getHours() +':'+currentdate.getMinutes();
+
     fs.writeFileSync( path.resolve( process.cwd()+ '/public/images/', output ), image );
-    console.log( 'Replaced ' + aantalbytes + ' byte(s) with trash and exported to ' + output + '. at' +datetime  );
     return callback(null,output);
 };
 Glitch.getAllGlitches = function (callback) {
